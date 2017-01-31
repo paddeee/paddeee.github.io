@@ -29,6 +29,10 @@ var scrollAnimatedHeader = (function() {
     return window.pageYOffset || docElem.scrollTop;
   }
 
+  if (!header) {
+    return;
+  }
+
   init();
 
 })();

@@ -465,6 +465,14 @@ dd {
     [role=main] {
       padding-top: 106px; } }
 
+/*------------------------------------*    #MAPS
+\*------------------------------------*/
+/**
+ * Maps
+ */
+.map--property-listing {
+  height: 24rem; }
+
 /*------------------------------------*    #MEDIA ELEMENTS
 \*------------------------------------*/
 /**
@@ -805,6 +813,72 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
   font-weight: normal;
   font-size: 1rem; }
 
+/*------------------------------------*	#PROPERTY ITEM
+\*------------------------------------*/
+.c-property-item hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+  margin: 2em 0 1em; }
+
+@media all and (min-width: 46.8em) {
+  .c-property-item hr {
+    display: none; } }
+
+.c-property-item__thumb-holder {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  @media all and (min-width: 46.8em) {
+    .c-property-item__thumb-holder {
+      height: 145px; } }
+  .c-property-item__thumb-holder img {
+    vertical-align: middle;
+    width: 100%; }
+
+.c-property-item__small-thumbs {
+  margin: 0.25em 0 0;
+  position: relative; }
+
+.c-property-item__small-thumb {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+  overflow: hidden;
+  height: 60px; }
+  @media all and (min-width: 46.8em) {
+    .c-property-item__small-thumb {
+      height: 48px; } }
+  .c-property-item__small-thumb img {
+    width: 100%; }
+
+.c-property-item__small-thumb:last-child {
+  margin-right: 0; }
+
+.c-property-item__overview {
+  clear: both;
+  padding: 0.5em 0 0; }
+  .c-property-item__overview > p {
+    color: #900603;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 0 0 0.5em; }
+
+.c-property-item__info {
+  display: flex; }
+  .c-property-item__info > div {
+    align-items: center;
+    color: #444444;
+    display: flex;
+    margin: 0.5em 1.5em 0.5em 0; }
+    .c-property-item__info > div .fa {
+      margin: 0 0.25em 0 0; }
+    .c-property-item__info > div .fa:before {
+      color: #a5a5a5; }
+
+.c-property-item__description {
+  font-size: 0.875rem; }
+
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
 /**
@@ -880,6 +954,17 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
       right: -28px; }
   .c-block-media--small .c-text-btn {
     font-size: 1rem; }
+
+.c-text-btn--branded-button {
+  font-size: 0.875rem;
+  padding: 0.5em;
+  background: #900603;
+  color: #fff; }
+  .c-text-btn--branded-button:hover, .c-text-btn--branded-button:focus {
+    color: #fff;
+    opacity: 0.8; }
+  .c-text-btn--branded-button:after {
+    background: none; }
 
 /**
  * Button on overlay
@@ -1505,6 +1590,15 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
       margin: 0;
       padding: 0 1em 1em 0; } }
 
+/**
+ * Property list
+ */
+.c-property-list__item.gi {
+  padding: 1em 1em 0; }
+  @media all and (min-width: 46.8em) {
+    .c-property-list__item.gi {
+      padding: 1em; } }
+
 /*------------------------------------*    #MESSAGING
 \*------------------------------------*/
 /**
@@ -1987,6 +2081,20 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
   background-size: cover;
   opacity: 0.2; }
 
+/*------------------------------------*	#TITLE/PAGINATION
+\*------------------------------------*/
+.c-title-pagination {
+  align-items: center;
+  display: flex; }
+  .c-title-pagination > h1 {
+    margin: 0 auto 0 0; }
+  @media all and (max-width: 800px) {
+    .c-title-pagination {
+      display: block; }
+      .c-title-pagination > h1 {
+        margin: 0 0 0.5em 0.5em;
+        text-align: left; } }
+
 /*------------------------------------*    #TEXT
 \*------------------------------------*/
 /**
@@ -2133,9 +2241,13 @@ progress[value]::-webkit-progress-bar {
   margin: 1rem auto;
   padding: 0 1rem; }
 
-.l-after-float {
+.l--after-float {
   clear: both;
   padding: 2rem 1rem 0; }
+
+.l--align-center {
+  display: flex;
+  justify-content: center; }
 
 /*------------------------------------*    #TEMPLATES
 \*------------------------------------*/
@@ -2177,7 +2289,7 @@ progress[value]::-webkit-progress-bar {
  * Grid item
  */
 .gi {
-  padding: 0.5em; }
+  padding: 1em; }
   .gi img {
     display: block; }
   @media all and (min-width: 46.8em) {
