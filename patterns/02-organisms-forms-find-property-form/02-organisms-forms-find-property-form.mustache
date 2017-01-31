@@ -1,0 +1,19 @@
+<form class="c-form  c-form--stacked-centre" method="post" action="{{ link.pages-dashboard }}">
+
+  <div class="c-form__sale-or-rent">
+    <div class="c-form__sale-button-holder">{{> atoms-button(btnText: "For Sale") }}</div>
+    <div class="c-form__rent-button-holder">{{> atoms-button(btnText: "For Rent", btnClass: "active") }}</div>
+  </div>
+
+  <div class="c-form__sale-or-rent-form">
+    <h2 class="c-form__title">{{ stackedFormTitle }}</h2>
+    <p>{{ stackedFormSummary }}</p>
+
+    {{> molecules-field }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }} {{> molecules-combined-field(id1: "MinimumField", id2: "MaximumField", type: "number", label1: "Minimum", label2: "Maximum") }}
+
+    <div class="c-form__actions">
+      {{> atoms-button(btnText: "Search") }}
+    </div>
+  </div>
+</form>
+<!--end c-form--stacked-->
