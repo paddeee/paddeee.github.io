@@ -1838,6 +1838,9 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * 1) The page header contains the page's heading, as perhaps other page information
  *    such as description or actions (edit, delete, etc).
  */
+.c-page-header.l {
+  padding: 1em 0; }
+
 .c-page-header__title {
   padding: 1rem 0 0.5rem;
   position: relative;
