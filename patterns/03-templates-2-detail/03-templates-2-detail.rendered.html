@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width" />
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;lang=en">
-  <link rel="stylesheet" href="../../css/style.css?1485884860339" media="all" />
-  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1485884860339" media="all" />
-  <link rel="stylesheet" href="../../css/jssor-slider.css?1485884860339" media="all" />
-  <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css?1485884860339" media="all" />
+  <link rel="stylesheet" href="../../css/style.css?1485965766704" media="all" />
+  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1485965766704" media="all" />
+  <link rel="stylesheet" href="../../css/jssor-slider.css?1485965766704" media="all" />
+  <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css?1485965766704" media="all" />
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
   <!-- never cache patterns -->
@@ -20,8 +20,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1485884860339" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1485884860339" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1485965766704" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1485965766704" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -61,19 +61,18 @@
 
 
       <div class="header__controls">
-        <a href="#nav" class="nav-toggle  nav-toggle-menu  icon-menu"><span class="is-vishidden">Menu</span></a>
 
         <nav id="nav" class="c-primary-nav">
 
           <ul class="c-primary-nav__list">
 
-            <li class="c-primary-nav__item"><a href="link.pages-home" class="c-primary-nav__link">Home</a></li>
-            <li class="c-primary-nav__item"><a href="link.pages-for-sale" class="c-primary-nav__link">For Sale</a></li>
-            <li class="c-primary-nav__item"><a href="link.pages-to-rent" class="c-primary-nav__link">To Rent</a></li>
-            <li class="c-primary-nav__item"><a href="link.pages-landlords" class="c-primary-nav__link">Landlords</a></li>
-            <li class="c-primary-nav__item"><a href="link.about" class="c-primary-nav__link">About</a></li>
-            <li class="c-primary-nav__item"><a href="link.pages-blog" class="c-primary-nav__link">Blog</a></li>
-            <li class="c-primary-nav__item"><a href="link.pages-contact-us" class="c-primary-nav__link">Contact</a></li>
+            <li class="c-primary-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-05-listing-sale&#x2F;04-pages-05-listing-sale.rendered.html" class="c-primary-nav__link">Sale</a></li>
+            <li class="c-primary-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-05-listing-rent&#x2F;04-pages-05-listing-rent.rendered.html" class="c-primary-nav__link">Rent</a></li>
+
+            <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-06-landlords&#x2F;04-pages-06-landlords.rendered.html" class="c-primary-nav__link">Landlords</a></li>
+            <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-03-about&#x2F;04-pages-03-about.rendered.html" class="c-primary-nav__link">About</a></li>
+            <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-01-blog-index&#x2F;04-pages-01-blog-index.rendered.html" class="c-primary-nav__link">Blog</a></li>
+            <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-04-contact&#x2F;04-pages-04-contact.rendered.html" class="c-primary-nav__link">Contact</a></li>
 
           </ul>
           <!--end c-primary-nav__list-->
@@ -111,16 +110,38 @@
           <!--end s-cms-content-->
 
 
+
           <hr />
 
-          <div class="s-text-passage">
+          <form class="c-form c-form--stacked" method="post" action="">
+            <div class="c-field">
+              <input id="field-id" type="text" placeholder="Label" value="" />
+              <span role="status" aria-live="polite" class="is-vishidden"></span>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, unde, dolore? Ex fugit, necessitatibus tempore neque ullam nostrum ducimus alias beatae voluptatibus iusto, perspiciatis tenetur consectetur reprehenderit, harum quae rerum!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti fuga, quas quisquam perspiciatis. Consequatur, atque ducimus dolores natus officia qui rerum consectetur repellat ullam accusantium laboriosam, reprehenderit nemo
-              deleniti</p>
+            </div>
+            <!--end c-field-->
 
-          </div>
-          <!--end s-cms-content-->
+            <div class="c-field">
+              <input id="field-id" type="text" placeholder="Label" value="" />
+              <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+            </div>
+            <!--end c-field-->
+
+
+            <div class="c-textarea">
+              <label for="" class="c-textarea__label">label</label>
+              <textarea id="" rows="10" class="c-textarea__text"></textarea>
+            </div>
+            <!-- end c-textarea -->
+
+
+            <div class="c-form__actions">
+              <button class="c-btn ">Button</button>
+
+            </div>
+          </form>
+          <!--end c-form--stacked-->
 
         </section>
       </div>
@@ -283,22 +304,22 @@
               <a href="link.pages-home" class="c-footer-nav__link">Home</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.pages-for-sale" class="c-footer-nav__link">For Sale</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-05-listing-sale&#x2F;04-pages-05-listing-sale.rendered.html" class="c-footer-nav__link">For Sale</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.pages-to-rent" class="c-footer-nav__link">To Rent</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-05-listing-rent&#x2F;04-pages-05-listing-rent.rendered.html" class="c-footer-nav__link">To Rent</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.pages-landlords" class="c-footer-nav__link">Landlords</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-06-landlords&#x2F;04-pages-06-landlords.rendered.html" class="c-footer-nav__link">Landlords</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.about" class="c-footer-nav__link">About</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-03-about&#x2F;04-pages-03-about.rendered.html" class="c-footer-nav__link">About</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.pages-blog" class="c-footer-nav__link">Blog</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-01-blog-index&#x2F;04-pages-01-blog-index.rendered.html" class="c-footer-nav__link">Blog</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="link.pages-contact-us" class="c-footer-nav__link">Contact</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-04-contact&#x2F;04-pages-04-contact.rendered.html" class="c-footer-nav__link">Contact</a>
             </li>
 
           </ul>
@@ -383,6 +404,9 @@
         "lineagePattern": "organisms-text-blob",
         "lineagePath": "../../patterns/02-organisms-text-text-blob/02-organisms-text-text-blob.rendered.html"
       }, {
+        "lineagePattern": "organisms-stacked-form",
+        "lineagePath": "../../patterns/02-organisms-forms-stacked-form/02-organisms-forms-stacked-form.rendered.html"
+      }, {
         "lineagePattern": "organisms-section-media-list",
         "lineagePath": "../../patterns/02-organisms-sections-section-media-list/02-organisms-sections-section-media-list.rendered.html"
       }, {
@@ -398,6 +422,9 @@
       }, {
         "lineagePattern": "organisms-text-blob",
         "lineagePath": "../../patterns/02-organisms-text-text-blob/02-organisms-text-text-blob.rendered.html"
+      }, {
+        "lineagePattern": "organisms-stacked-form",
+        "lineagePath": "../../patterns/02-organisms-forms-stacked-form/02-organisms-forms-stacked-form.rendered.html"
       }, {
         "lineagePattern": "organisms-section-media-list",
         "lineagePath": "../../patterns/02-organisms-sections-section-media-list/02-organisms-sections-section-media-list.rendered.html"
@@ -415,6 +442,9 @@
       }, {
         "lineagePattern": "pages-contact",
         "lineagePath": "../../patterns/04-pages-04-contact/04-pages-04-contact.rendered.html"
+      }, {
+        "lineagePattern": "pages-landlords",
+        "lineagePath": "../../patterns/04-pages-06-landlords/04-pages-06-landlords.rendered.html"
       }],
       "lineageR": [{
         "lineagePattern": "pages-blog-detail",
@@ -425,6 +455,9 @@
       }, {
         "lineagePattern": "pages-contact",
         "lineagePath": "../../patterns/04-pages-04-contact/04-pages-04-contact.rendered.html"
+      }, {
+        "lineagePattern": "pages-landlords",
+        "lineagePath": "../../patterns/04-pages-06-landlords/04-pages-06-landlords.rendered.html"
       }],
       "patternLineageEExists": true,
       "patternDesc": "",
@@ -473,10 +506,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1485884860339">
+  <script id="pl-js-polyfill-insert-1485965766704">
     (function() {
       if (self != top) {
-        var cb = '1485884860339';
+        var cb = '1485965766704';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -486,10 +519,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1485884860339">
+  <script id="pl-js-insert-1485965766704">
     (function() {
       if (self != top) {
-        var cb = '1485884860339';
+        var cb = '1485965766704';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']
@@ -504,7 +537,6 @@
   <script type="text/javascript" src="/js/jssor-slider.js"></script>
   <script type="text/javascript" src="/js/fitvids.js"></script>
   <script type="text/javascript" src="/js/responsive-video.js"></script>
-  <script type="text/javascript" src="/js/nav.js"></script>
   <script type="text/javascript" src="/js/progress.js"></script>
   <script type="text/javascript" src="/js/overlay.js"></script>
   <script type="text/javascript" src="/js/slider.js"></script>
