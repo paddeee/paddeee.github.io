@@ -1387,7 +1387,7 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
     margin: 0 auto; }
   @media all and (max-width: 50em) {
     .c-logo {
-      max-width: 95px; } }
+      max-width: 60px; } }
 
 .c-logo-link {
   display: inline-block;
@@ -1814,7 +1814,10 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
 .c-primary-nav__link {
   font-weight: bold;
   display: block;
-  padding: 1rem; }
+  padding: 0.5rem 1rem; }
+  @media all and (min-width: 45em) {
+    .c-primary-nav__link {
+      padding: 1rem; } }
 
 /**
  * Pagination
