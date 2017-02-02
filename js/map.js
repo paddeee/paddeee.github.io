@@ -144,7 +144,7 @@ function initMap() {
       google.maps.event.addListener(marker, 'click', function () {
         jQuery('.c-property-item').removeClass('c-property-item--active');
         jQuery('html,body').animate({
-          scrollTop: jQuery('[id=PropertyID-'+markerInfo[2]+']').offset().top
+          scrollTop: jQuery('[id=PropertyID-'+markerInfo[2]+']').offset().top - 80
         }, 500);
         jQuery('[id=PropertyID-'+markerInfo[2]+']').addClass('c-property-item--active');
       });
