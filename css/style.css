@@ -1232,7 +1232,7 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * Stacked form button wrapper
  */
 .c-form__actions {
-  margin-bottom: 1rem; }
+  margin: 1rem 0; }
 
 /*------------------------------------*    #FIELDS
 \*------------------------------------*/
@@ -1862,6 +1862,7 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * Section
  */
 .c-section {
+  height: 100%;
   position: relative;
   margin: 0 0 2em; }
   @media all and (min-width: 39.8em) {
@@ -2342,18 +2343,21 @@ progress[value]::-webkit-progress-bar {
  * 2 column layout
  */
 .l--two-col {
-  display: flex;
-  flex-direction: column;
   /**
 	 * Sidebar
 	 */ }
+  @media all and (min-width: 50em) {
+    .l--two-col {
+      display: flex;
+      flex-direction: column; } }
   @media all and (min-width: 50em) {
     .l--two-col .l-main {
       width: 70%;
       padding-right: 1em; } }
   @media all and (min-width: 39.8em) {
     .l--two-col .l-sidebar {
-      display: flex; } }
+      display: flex;
+      height: 100%; } }
   @media all and (min-width: 50em) {
     .l--two-col .l-sidebar {
       flex-direction: column;
