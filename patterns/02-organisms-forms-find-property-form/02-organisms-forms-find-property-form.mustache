@@ -1,4 +1,5 @@
-<form class="c-form  c-form--stacked-centre" method="post" action="{{ link.pages-dashboard }}">
+{{# findPropertyForm }}
+<form class="c-form  c-form--stacked-centre {{ styleModifier }}" method="post" action="{{ link.pages-dashboard }}">
 
   <div class="c-form__sale-or-rent">
     <div class="c-form__sale-button-holder">{{> atoms-button(btnText: "For Sale") }}</div>
@@ -6,10 +7,17 @@
   </div>
 
   <div class="c-form__sale-or-rent-form">
-    <h2 class="c-form__title">{{ stackedFormTitle }}</h2>
-    <p>{{ stackedFormSummary }}</p>
+    <h2 class="c-form__title">{{ title }}</h2>
+    <p>{{ summary }}</p>
 
-    {{> molecules-field }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }} {{> molecules-combined-field(id1: "MinimumField", id2: "MaximumField", type: "number", label1: "Minimum", label2: "Maximum") }}
+    <div class="c-form__split">
+      {{> molecules-field(id: "SearchAreaField", type: "text", label: "Search Area") }} {{> molecules-select-dropdown(id: "Radius Dropdown", label: "Search Area") }}
+    </div>
+    {{> molecules-combined-field(id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }}
+    <div class="c-form__split">
+      {{> molecules-select-dropdown(id: "Bedrooms Min Dropdown", label: "Min Beds") }} {{> molecules-select-dropdown(id: "Bedrooms Max Dropdown", label: "Max Beds") }}
+    </div>
+    {{> molecules-select-dropdown }} {{> molecules-select-dropdown }}
 
     <div class="c-form__actions">
       {{> atoms-button(btnText: "Search") }}
@@ -17,3 +25,4 @@
   </div>
 </form>
 <!--end c-form--stacked-->
+{{/ findPropertyForm}}

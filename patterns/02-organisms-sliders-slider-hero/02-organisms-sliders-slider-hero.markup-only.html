@@ -39,7 +39,7 @@
   </div>
 
   <div class="c-block-hero__find-property">
-    <form class="c-form  c-form--stacked-centre" method="post" action="">
+    <form class="c-form  c-form--stacked-centre " method="post" action="">
 
       <div class="c-form__sale-or-rent">
         <div class="c-form__sale-button-holder"><button class="c-btn ">For Sale</button>
@@ -52,15 +52,16 @@
         <h2 class="c-form__title">FIND A PROPERTY</h2>
         <p>Discover your perfect home in seconds</p>
 
-        <div class="c-field">
-          <input id="field-id" type="text" placeholder="Label" value="" />
-          <span role="status" aria-live="polite" class="is-vishidden"></span>
+        <div class="c-form__split">
+          <div class="c-field">
+            <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
 
-        </div>
-        <!--end c-field-->
+          </div>
+          <!--end c-field-->
 
-        <div class="c-field">
-          <select id="bedroom-select-id">
+          <div class="c-field">
+            <select id="bedroom-select-id">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -76,67 +77,114 @@
                 <option>10</option>
         </optgroup>
     </select>
-          <span role="status" aria-live="polite" class="is-vishidden"></span>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+          </div>
+          <!--end c-field-->
 
         </div>
-        <!--end c-field-->
-
-        <div class="c-field">
-          <select id="bedroom-select-id">
-        <optgroup label="Label">
-                <option>Default</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-        </optgroup>
-    </select>
-          <span role="status" aria-live="polite" class="is-vishidden"></span>
-
-        </div>
-        <!--end c-field-->
-
-        <div class="c-field">
-          <select id="bedroom-select-id">
-        <optgroup label="Label">
-                <option>Default</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-        </optgroup>
-    </select>
-          <span role="status" aria-live="polite" class="is-vishidden"></span>
-
-        </div>
-        <!--end c-field-->
-
         <div class="c-combined-field">
           <div class="c-combined-field__field">
-            <label for="MinimumField">£</label>
-            <input id="MinimumField" type="number" placeholder="Minimum" value="" />
+            <label for="MinimumPrice">£</label>
+            <input id="MinimumPrice" type="number" placeholder="Price From" value="" />
             <span role="status" aria-live="polite" class="is-vishidden"></span>
           </div>
           <div class="c-combined-field__separator">-</div>
           <div class="c-combined-field__field">
-            <label for="MaximumField">£</label>
-            <input id="MaximumField" type="number" placeholder="Maximum" value="" />
+            <label for="MaximumPrice">£</label>
+            <input id="MaximumPrice" type="number" placeholder="Price To" value="" />
             <span role="status" aria-live="polite" class="is-vishidden"></span>
           </div>
+
+        </div>
+        <!--end c-field-->
+
+        <div class="c-form__split">
+          <div class="c-field">
+            <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+          </div>
+          <!--end c-field-->
+
+          <div class="c-field">
+            <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+          </div>
+          <!--end c-field-->
+
+        </div>
+        <div class="c-field">
+          <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+        </div>
+        <!--end c-field-->
+
+        <div class="c-field">
+          <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
 
         </div>
         <!--end c-field-->
