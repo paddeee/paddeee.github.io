@@ -13,11 +13,8 @@
     <div class="c-form__split">
       {{> molecules-field(id: "SearchAreaField", type: "text", label: "Search Area") }} {{> molecules-select-dropdown(id: "Radius Dropdown", label: "Search Area") }}
     </div>
-    {{> molecules-combined-field(id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }}
-    <div class="c-form__split">
-      {{> molecules-select-dropdown(id: "Bedrooms Min Dropdown", label: "Min Beds") }} {{> molecules-select-dropdown(id: "Bedrooms Max Dropdown", label: "Max Beds") }}
-    </div>
-    {{> molecules-select-dropdown }} {{> molecules-select-dropdown }}
+    {{> molecules-combined-dropdown(symbol: "£", id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }} {{> molecules-combined-dropdown(id1: "MinimumBeds", id2: "MaximumBeds", label1: "Min Beds", label2: "Max
+    Beds") }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }}
 
     <div class="c-form__actions">
       {{> atoms-button(btnText: "Search") }}

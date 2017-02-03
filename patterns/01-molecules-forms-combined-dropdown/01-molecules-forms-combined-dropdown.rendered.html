@@ -30,98 +30,51 @@
 
 <body class="body">
 
-  <div id="" class="c-property-item">
-    <div class="c-property-item__thumb-holder">
-      <a href="#" class="zoom-image">
-        <img src="" alt="Energised Agent - StyleGuide">
-        <div class="corner-ribbon top-left red">Sold</div>
-        <div class="corner-ribbon bottom-left orange">STC</div>
-        <div class="corner-ribbon top-right blue">Under Offer</div>
-        <div class="corner-ribbon bottom-right green">New</div>
-        <div class="corner-ribbon bottom-centre turquoise">Price Reduced</div>
-      </a>
+  <div class="c-combined-field">
+    <div class="c-combined-field__field">
+      <select id="">
+            <optgroup label="">
+            </optgroup>
+        </select>
+      <span role="status" aria-live="polite" class="is-vishidden"></span>
     </div>
-    <div class="c-property-item__small-thumbs">
-
-      <div class="c-property-item__small-thumb">
-        <a href="#">
-          <img src="" alt="Energised Agent - StyleGuide">
-        </a>
-      </div>
-      <div class="c-property-item__small-thumb">
-        <a href="#">
-          <img src="" alt="Energised Agent - StyleGuide">
-        </a>
-      </div>
-      <div class="c-property-item__small-thumb">
-        <a href="#">
-          <img src="" alt="Energised Agent - StyleGuide">
-        </a>
-      </div>
+    <div class="c-combined-field__separator">-</div>
+    <div class="c-combined-field__field">
+      <select id="">
+            <optgroup label="">
+            </optgroup>
+        </select>
+      <span role="status" aria-live="polite" class="is-vishidden"></span>
     </div>
 
-    <div class="c-property-item__overview">
-      <h3>Energised Agent - StyleGuide <br></h3>
-      <p></p>
-    </div>
-
-    <div class="c-property-item__info">
-      <div title="Bedrooms">
-        <span class="fa  fa-2x  fa-bed"></span>
-        <span>6</span>
-      </div>
-      <div title="Bathrooms">
-        <span class="fa  fa-2x  fa-bath"></span>
-        <span>1</span>
-      </div>
-      <div title="Reception Rooms">
-        <span class="fa  fa-2x  fa-tv"></span>
-        <span>2</span>
-      </div>
-    </div>
-
-
-    <div class="c-property-item__description">
-      <p></p>
-      <a href="#" class="c-text-btn c-text-btn--branded-button">Read more...</a>
-
-    </div>
-
-    <hr>
   </div>
-  <!-- end c-property-item -->
+  <!--end c-field-->
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
     {
       "cssEnabled": false,
-      "patternLineageExists": true,
-      "patternLineages": [{
-        "lineagePattern": "atoms-text-button",
-        "lineagePath": "../../patterns/00-atoms-buttons-text-button/00-atoms-buttons-text-button.rendered.html"
-      }],
-      "lineage": [{
-        "lineagePattern": "atoms-text-button",
-        "lineagePath": "../../patterns/00-atoms-buttons-text-button/00-atoms-buttons-text-button.rendered.html"
-      }],
+      "patternLineageExists": false,
+      "patternLineages": [],
+      "lineage": [],
       "patternLineageRExists": true,
       "patternLineagesR": [{
-        "lineagePattern": "organisms-property-list",
-        "lineagePath": "../../patterns/02-organisms-lists-property-list/02-organisms-lists-property-list.rendered.html"
+        "lineagePattern": "organisms-find-property-form",
+        "lineagePath": "../../patterns/02-organisms-forms-find-property-form/02-organisms-forms-find-property-form.rendered.html"
       }],
       "lineageR": [{
-        "lineagePattern": "organisms-property-list",
-        "lineagePath": "../../patterns/02-organisms-lists-property-list/02-organisms-lists-property-list.rendered.html"
+        "lineagePattern": "organisms-find-property-form",
+        "lineagePath": "../../patterns/02-organisms-forms-find-property-form/02-organisms-forms-find-property-form.rendered.html"
       }],
       "patternLineageEExists": true,
-      "patternDesc": "<p>An item for a property, serving as a link to another page.</p>\n<p>Usage: Found on property listing pages.</p>\n",
+      "patternDesc": "<p>A component where two select dropdowns are separated by a separator</p>\n",
       "patternBreadcrumb": {
         "patternType": "molecules",
-        "patternSubtype": "blocks"
+        "patternSubtype": "forms"
       },
       "patternExtension": "mustache",
-      "patternName": "Property Item",
-      "patternPartial": "molecules-property-item",
+      "patternName": "Combined Dropdown",
+      "patternPartial": "molecules-combined-dropdown",
       "patternState": "",
       "patternEngineName": "mustache",
       "extraOutput": {}
