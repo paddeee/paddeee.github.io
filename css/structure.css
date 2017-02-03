@@ -86,14 +86,6 @@ Atomic design is philosophically complimentary with these CSS approaches:
  *    defines the application of those colors.
  */
 /*
- * Brand Colors
- * 1) Brand color variables use English names to define colors to make palettes easier to
- *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
- * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
- *    second-tier application colors.
- *
- */
-/*
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
  *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
@@ -369,9 +361,6 @@ input[type="search"]::-webkit-search-decoration {
  */
 .information {
   color: #0192d0; }
-
-.primary-colour {
-  color: #900603; }
 
 .white-colour {
   color: #fff; }
@@ -1267,21 +1256,16 @@ abbr {
  * 1) This sits overtop of the hero image when space permits
  */
 .c-block-hero__find-property {
-  background-color: #900603;
   color: #fff;
   font-size: 0.75rem;
   transition: all 0.2s ease; }
   @media all and (min-width: 930px) {
     .c-block-hero__find-property {
-      background-color: rgba(144, 6, 3, 0.5);
       position: absolute;
       bottom: 0;
       left: 5vw;
       width: 35%;
       border-radius: 6px 6px 0 0; } }
-  .c-block-hero:hover .c-block-hero__find-property,
-  .c-block-hero:focus .c-block-hero__find-property {
-    background-color: #900603; }
 
 .c-form__sale-or-rent {
   display: flex;
@@ -1308,7 +1292,6 @@ abbr {
       padding: 3em 0 0; } }
 
 .c-form--listing-search {
-  background-color: #900603;
   color: #fff; }
   .c-form--listing-search .c-form__sale-or-rent {
     display: none; }
@@ -1340,9 +1323,6 @@ abbr {
   transition: all 0.2s ease; }
   .c-block-media--small {
     font-size: 0.75rem; }
-
-a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-media__headline {
-  color: #900603; }
 
 /**
  * Media Container
@@ -1491,7 +1471,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
     display: none; } }
 
 .c-property-item--active {
-  border: solid 1px #900603;
   box-shadow: 0px 0px 9px #888888;
   padding: 13px; }
 
@@ -1529,7 +1508,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
   clear: both;
   padding: 0.5em 0 0; }
   .c-property-item__overview > p {
-    color: #900603;
     font-size: 0.875rem;
     font-weight: bold;
     margin: 0 0 0.5em; }
@@ -1628,7 +1606,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
 .c-text-btn--branded-button {
   font-size: 0.875rem;
   padding: 0.5em;
-  background: #900603;
   color: #fff; }
   .c-text-btn--branded-button:hover, .c-text-btn--branded-button:focus {
     color: #fff;
@@ -1863,7 +1840,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
 
 .header__contact-info {
   align-items: center;
-  background-color: #900603;
   display: flex;
   height: 2.6rem;
   -webkit-transition: height 0.3s;
@@ -2476,11 +2452,9 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
     width: 3rem;
     height: 0.2rem;
     top: 36px;
-    left: 1px;
-    background: #900603; }
+    left: 1px; }
 
 .c-section__title--footer {
-  color: #900603;
   font-size: 1.0625rem; }
   .c-section__title--footer:after {
     background: #000;
@@ -2530,7 +2504,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
   position: relative; }
 
 .c-section-valuation__tint {
-  background-color: #900603;
   position: absolute;
   top: 0;
   left: 0;
@@ -2598,7 +2571,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
     text-transform: uppercase; }
 
 .c-featured-property__tint {
-  background-color: #900603;
   position: absolute;
   top: 0;
   left: 0;
@@ -2735,7 +2707,6 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
     text-transform: uppercase; }
 
 .c-subscribe__tint {
-  background-color: #900603;
   position: absolute;
   top: 0;
   left: 0;
