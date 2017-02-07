@@ -39,7 +39,7 @@
           <li class="c-primary-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-05-listing-rent&#x2F;04-pages-05-listing-rent.rendered.html" class="c-primary-nav__link">Rent</a></li>
           <li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link">Valuations</a></li>
 
-          <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-06-landlords&#x2F;04-pages-06-landlords.rendered.html" class="c-primary-nav__link">Landlords</a></li>
+          <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-07-landlords&#x2F;04-pages-07-landlords.rendered.html" class="c-primary-nav__link">Landlords</a></li>
           <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-03-about&#x2F;04-pages-03-about.rendered.html" class="c-primary-nav__link">About</a></li>
           <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-01-blog-index&#x2F;04-pages-01-blog-index.rendered.html" class="c-primary-nav__link">Blog</a></li>
           <li class="c-primary-nav__item  c-primary-nav__item--wide"><a href="&#x2F;patterns&#x2F;04-pages-04-contact&#x2F;04-pages-04-contact.rendered.html" class="c-primary-nav__link">Contact</a></li>
@@ -60,30 +60,29 @@
 
 <main role="main">
 
-  <div class="">
-    <form class="c-form  c-form--stacked-centre c-form--listing-search" method="post" action="">
+  <form class="c-form  c-form--stacked-centre c-form--listing-search" method="post" action="">
 
-      <div class="c-form__sale-or-rent">
-        <div class="c-form__sale-button-holder"><button class="c-btn ">For Sale</button>
-        </div>
-        <div class="c-form__rent-button-holder"><button class="c-btn active">For Rent</button>
-        </div>
+    <div class="c-form__sale-or-rent">
+      <div class="c-form__sale-button-holder"><button class="c-btn ">For Sale</button>
       </div>
+      <div class="c-form__rent-button-holder"><button class="c-btn active">For Rent</button>
+      </div>
+    </div>
 
-      <div class="c-form__sale-or-rent-form">
-        <h2 class="c-form__title">FIND A PROPERTY</h2>
-        <p>Discover your perfect home in seconds</p>
+    <div class="c-form__sale-or-rent-form">
+      <h2 class="c-form__title">FIND A PROPERTY</h2>
+      <p>Discover your perfect home in seconds</p>
 
-        <div class="c-form__split">
-          <div class="c-field">
-            <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
+      <div class="c-form__split">
+        <div class="c-field">
+          <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
 
-          </div>
-          <!--end c-field-->
+        </div>
+        <!--end c-field-->
 
-          <div class="c-field">
-            <select id="bedroom-select-id">
+        <div class="c-field">
+          <select id="bedroom-select-id">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -99,107 +98,107 @@
                 <option>10</option>
         </optgroup>
     </select>
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
-
-          </div>
-          <!--end c-field-->
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
 
         </div>
-        <div class="c-combined-field">
-          <div class="c-combined-field__field">
-            <label for="MinimumPrice">£</label>
-            <select id="MinimumPrice">
+        <!--end c-field-->
+
+      </div>
+      <div class="c-combined-field">
+        <div class="c-combined-field__field">
+          <label for="MinimumPrice">£</label>
+          <select id="MinimumPrice">
             <optgroup label="Price From">
             </optgroup>
         </select>
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
-          </div>
-          <div class="c-combined-field__separator">-</div>
-          <div class="c-combined-field__field">
-            <label for="MaximumPrice">£</label>
-            <select id="MaximumPrice">
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
+        </div>
+        <div class="c-combined-field__separator">-</div>
+        <div class="c-combined-field__field">
+          <label for="MaximumPrice">£</label>
+          <select id="MaximumPrice">
             <optgroup label="Price To">
             </optgroup>
         </select>
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
-          </div>
-
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
         </div>
-        <!--end c-field-->
 
-        <div class="c-combined-field">
-          <div class="c-combined-field__field">
-            <select id="MinimumBeds">
+      </div>
+      <!--end c-field-->
+
+      <div class="c-combined-field">
+        <div class="c-combined-field__field">
+          <select id="MinimumBeds">
             <optgroup label="Min Beds">
             </optgroup>
         </select>
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
-          </div>
-          <div class="c-combined-field__separator">-</div>
-          <div class="c-combined-field__field">
-            <select id="MaximumBeds">
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
+        </div>
+        <div class="c-combined-field__separator">-</div>
+        <div class="c-combined-field__field">
+          <select id="MaximumBeds">
             <optgroup label="Max Beds">
             </optgroup>
         </select>
-            <span role="status" aria-live="polite" class="is-vishidden"></span>
-          </div>
-
-        </div>
-        <!--end c-field-->
-
-        <div class="c-field">
-          <select id="bedroom-select-id">
-        <optgroup label="Label">
-                <option>Default</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-        </optgroup>
-    </select>
           <span role="status" aria-live="polite" class="is-vishidden"></span>
-
         </div>
-        <!--end c-field-->
 
-        <div class="c-field">
-          <select id="bedroom-select-id">
-        <optgroup label="Label">
-                <option>Default</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-        </optgroup>
-    </select>
-          <span role="status" aria-live="polite" class="is-vishidden"></span>
-
-        </div>
-        <!--end c-field-->
-
-
-        <div class="c-form__actions">
-          <button class="c-btn ">Search</button>
-
-        </div>
       </div>
-    </form>
-    <!--end c-form--stacked-->
-  </div>
+      <!--end c-field-->
+
+      <div class="c-field">
+        <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+        <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+      </div>
+      <!--end c-field-->
+
+      <div class="c-field">
+        <select id="bedroom-select-id">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+        <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+      </div>
+      <!--end c-field-->
+
+
+      <div class="c-form__actions">
+        <button class="c-btn ">Search</button>
+
+      </div>
+    </div>
+  </form>
+  <!--end c-form--stacked-->
+
 
   <div id="PropertyListMap" class="map  map--property-listing"></div>
 
@@ -213,7 +212,7 @@
     <h2>Family House in Chadderton</h2>
 
     <div class="c-featured-property__image">
-      <a href="#" title="View Property">
+      <a href="" title="View Property">
         <img src="http:&#x2F;&#x2F;eatest.energisededge.com&#x2F;wp-content&#x2F;uploads&#x2F;2017&#x2F;01&#x2F;Front-W4-front.jpg" alt="Family House in Chadderton" />
       </a>
     </div>
@@ -286,7 +285,7 @@
 
     <div class="c-featured-property__description">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, unde, dolore? Ex fugit, necessitatibus tempore neque ullam nostrum ducimus alias beatae voluptatibus iusto, perspiciatis tenetur consectetur reprehenderit, harum quae rerum!</p>
-      <a href="#">Read More ></a>
+      <a href="">Read More ></a>
     </div>
   </section>
   <!--end section-->
@@ -314,7 +313,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-1" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B03730450-3e18-4a44-bf95-23ffb070c989%7D&#x2F;main&#x2F;3-orchard-41.jpg" alt="Orchard Court Billinge">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -377,7 +376,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-2" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7Bb5a1298b-664c-4c63-91fe-bbcea257cd6b%7D&#x2F;main&#x2F;2-dodds-farm-19.jpg" alt="Dodds Farm Lane Aspull">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -440,7 +439,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-3" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B3f45a173-3f41-4269-bc5b-7b87b424abce%7D&#x2F;main&#x2F;5-brierly-18.jpg" alt="Briarly Standish ">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -503,7 +502,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-4" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B93b24dcc-bda0-4e3c-a530-29e3d2b0fdd3%7D&#x2F;main&#x2F;11-Melling-Way-21.jpg" alt="Orchard Court Billinge">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -566,7 +565,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-5" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7Bb5a1298b-664c-4c63-91fe-bbcea257cd6b%7D&#x2F;main&#x2F;2-dodds-farm-19.jpg" alt="Downall Green Road Ashton-In-Makerfield">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -629,7 +628,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-6" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B3f45a173-3f41-4269-bc5b-7b87b424abce%7D&#x2F;main&#x2F;5-brierly-18.jpg" alt="Gardinar Close Standish">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -692,7 +691,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-7" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B03730450-3e18-4a44-bf95-23ffb070c989%7D&#x2F;main&#x2F;3-orchard-41.jpg" alt="Melling Way Winstanley">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -755,7 +754,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-8" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7Bb5a1298b-664c-4c63-91fe-bbcea257cd6b%7D&#x2F;main&#x2F;2-dodds-farm-19.jpg" alt="Almond Brook Rd Standish">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -818,7 +817,7 @@
       <li class="c-property-list__item gi">
         <div id="PropertyID-9" class="c-property-item">
           <div class="c-property-item__thumb-holder">
-            <a href="#" class="zoom-image">
+            <a href="&#x2F;patterns&#x2F;04-pages-06-single-listing&#x2F;04-pages-06-single-listing.rendered.html" class="zoom-image">
               <img src="http:&#x2F;&#x2F;med04.expertagent.co.uk&#x2F;in4glestates&#x2F;%7Bdcd2d0fd-2f47-45d2-9deb-8390673bfd2b%7D&#x2F;%7B3f45a173-3f41-4269-bc5b-7b87b424abce%7D&#x2F;main&#x2F;5-brierly-18.jpg" alt="Wigan Lane Marylebone ">
               <div class="corner-ribbon top-left red">Sold</div>
               <div class="corner-ribbon bottom-left orange">STC</div>
@@ -943,7 +942,7 @@
               <a href="&#x2F;patterns&#x2F;04-pages-05-listing-rent&#x2F;04-pages-05-listing-rent.rendered.html" class="c-footer-nav__link">To Rent</a>
             </li>
             <li class="c-footer-nav__item">
-              <a href="&#x2F;patterns&#x2F;04-pages-06-landlords&#x2F;04-pages-06-landlords.rendered.html" class="c-footer-nav__link">Landlords</a>
+              <a href="&#x2F;patterns&#x2F;04-pages-07-landlords&#x2F;04-pages-07-landlords.rendered.html" class="c-footer-nav__link">Landlords</a>
             </li>
             <li class="c-footer-nav__item">
               <a href="&#x2F;patterns&#x2F;04-pages-03-about&#x2F;04-pages-03-about.rendered.html" class="c-footer-nav__link">About</a>

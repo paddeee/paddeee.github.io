@@ -162,6 +162,11 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
 .c-property-item__overview > p {
   color: #900603; }
 
+/*------------------------------------*	#AGENT CALL TO ACTION
+\*------------------------------------*/
+.c-agent-cta {
+  background-color: #900603; }
+
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
 /**
@@ -220,6 +225,11 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * 1) The valuation section containing a video element.
  */
 .c-section-valuation__tint {
+  background-color: #900603; }
+
+/*------------------------------------*	#SELECTED PROPERTY SECTION
+\*------------------------------------*/
+.c-selected-property__tint {
   background-color: #900603; }
 
 /*------------------------------------*	#FEATURED PROPERTY SECTION

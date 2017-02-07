@@ -5,6 +5,8 @@ locations.push([53.5056999, -2.1954638, 1]);
 locations.push([53.5016622, -2.197378, 3]);
 locations.push([53.5021904, -2.1837682, 8]);
 
+var singleLocation = [[53.5056999, -2.1954638, 1]];
+
 function initMap() {
 
 // Define Marker Shapes
@@ -17,16 +19,17 @@ function initMap() {
 
 // Function to do the inheritance properly
 // Inspired by: http://stackoverflow.com/questions/9812783/cannot-inherit-google-maps-map-v3-in-my-custom-class-javascript
-  var inherits = function(childCtor, parentCtor) {
+  var inherits = function (childCtor, parentCtor) {
     /** @constructor */
-    function tempCtor() {};
+    function tempCtor() {
+    };
     tempCtor.prototype = parentCtor.prototype;
     childCtor.superClass_ = parentCtor.prototype;
     childCtor.prototype = new tempCtor();
     childCtor.prototype.constructor = childCtor;
   };
 
-  function Marker(options){
+  function Marker(options) {
     google.maps.Marker.apply(this, arguments);
 
     if (options.map_icon_label) {
@@ -43,13 +46,13 @@ function initMap() {
   inherits(Marker, google.maps.Marker);
 
 // Custom Marker SetMap
-  Marker.prototype.setMap = function() {
+  Marker.prototype.setMap = function () {
     google.maps.Marker.prototype.setMap.apply(this, arguments);
     (this.MarkerLabel) && this.MarkerLabel.setMap.apply(this.MarkerLabel, arguments);
   };
 
 // Marker Label Overlay
-  var MarkerLabel = function(options) {
+  var MarkerLabel = function (options) {
     var self = this;
     this.setValues(options);
 
@@ -58,7 +61,7 @@ function initMap() {
     this.div.className = 'map-icon-label';
 
     // Trigger the marker click handler if clicking on the label
-    google.maps.event.addDomListener(this.div, 'click', function(e){
+    google.maps.event.addDomListener(this.div, 'click', function (e) {
       (e.stopPropagation) && e.stopPropagation();
       google.maps.event.trigger(self.marker, 'click');
     });
@@ -68,19 +71,25 @@ function initMap() {
   MarkerLabel.prototype = new google.maps.OverlayView;
 
 // Marker Label onAdd
-  MarkerLabel.prototype.onAdd = function() {
+  MarkerLabel.prototype.onAdd = function () {
     var pane = this.getPanes().overlayImage.appendChild(this.div);
     var self = this;
 
     this.listeners = [
-      google.maps.event.addListener(this, 'position_changed', function() { self.draw(); }),
-      google.maps.event.addListener(this, 'text_changed', function() { self.draw(); }),
-      google.maps.event.addListener(this, 'zindex_changed', function() { self.draw(); })
+      google.maps.event.addListener(this, 'position_changed', function () {
+        self.draw();
+      }),
+      google.maps.event.addListener(this, 'text_changed', function () {
+        self.draw();
+      }),
+      google.maps.event.addListener(this, 'zindex_changed', function () {
+        self.draw();
+      })
     ];
   };
 
 // Marker Label onRemove
-  MarkerLabel.prototype.onRemove = function() {
+  MarkerLabel.prototype.onRemove = function () {
     this.div.parentNode.removeChild(this.div);
 
     for (var i = 0, I = this.listeners.length; i < I; ++i) {
@@ -89,7 +98,7 @@ function initMap() {
   };
 
 // Implement draw
-  MarkerLabel.prototype.draw = function() {
+  MarkerLabel.prototype.draw = function () {
     var projection = this.getProjection();
     var position = projection.fromLatLngToDivPixel(this.get('position'));
     var div = this.div;
@@ -103,11 +112,7 @@ function initMap() {
     div.style.top = (position.y - div.offsetHeight - 5) + 'px';
   };
 
-  if (!document.getElementById('PropertyListMap')) {
-    return;
-  }
-
-  if (locations.length) {
+  if (locations.length && document.getElementById('PropertyListMap')) {
 
     var bounds = new google.maps.LatLngBounds();
 
@@ -121,10 +126,10 @@ function initMap() {
       zoom: 12
     });
 
-    jQuery.each(locations, function(i, markerInfo) {
+    jQuery.each(locations, function (i, markerInfo) {
 
       if (markerInfo[0] == 0 || markerInfo[1] == 0) return;
-      var position = new google.maps.LatLng(markerInfo[0],markerInfo[1]);
+      var position = new google.maps.LatLng(markerInfo[0], markerInfo[1]);
       bounds.extend(position);
       propertyListMap.fitBounds(bounds);
 
@@ -144,9 +149,41 @@ function initMap() {
       google.maps.event.addListener(marker, 'click', function () {
         jQuery('.c-property-item').removeClass('c-property-item--active');
         jQuery('html,body').animate({
-          scrollTop: jQuery('[id=PropertyID-'+markerInfo[2]+']').offset().top - 80
+          scrollTop: jQuery('[id=PropertyID-' + markerInfo[2] + ']').offset().top - 80
         }, 500);
-        jQuery('[id=PropertyID-'+markerInfo[2]+']').addClass('c-property-item--active');
+        jQuery('[id=PropertyID-' + markerInfo[2] + ']').addClass('c-property-item--active');
+      });
+    });
+  }
+
+  // Property Single Listing Map
+  if (singleLocation.length && document.getElementById('PropertySingleListMap')) {
+
+    var propertySingleListMap = new google.maps.Map(document.getElementById('PropertySingleListMap'), {
+      center: {
+        lat: 53.5055999,
+        lng: -2.1944638
+      },
+      scrollwheel: false,
+      zoom: 12
+    });
+
+    jQuery.each(singleLocation, function (i, markerInfo) {
+
+      if (markerInfo[0] == 0 || markerInfo[1] == 0) return;
+      var position = new google.maps.LatLng(markerInfo[0], markerInfo[1]);
+
+      var marker = new Marker({
+        position: position,
+        map: propertySingleListMap,
+        icon: {
+          path: MAP_PIN,
+          fillColor: config.primaryColour,
+          fillOpacity: 1,
+          strokeColor: '',
+          strokeWeight: 0
+        },
+        map_icon_label: '<span class="map-icon  map-icon-real-estate-agency"></span>'
       });
     });
   }

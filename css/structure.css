@@ -300,6 +300,12 @@ input[type="search"]::-webkit-search-decoration {
   clip: rect(1px, 1px, 1px, 1px); }
 
 /**
+ * Text Uppercase
+ */
+.upper-case {
+  text-transform: uppercase; }
+
+/**
  * Text align right
  */
 .align-right {
@@ -547,11 +553,19 @@ dd {
 
 /*------------------------------------*    #MAPS
 \*------------------------------------*/
+/*------------------------------------*    #VARIABLES
+\*------------------------------------*/
 /**
  * Maps
  */
 .map--property-listing {
-  height: 24rem; }
+  height: 24rem;
+  margin: 0 0 -5em -2em;
+  width: calc(100% + 4em); }
+  @media all and (min-width: 900px) {
+    .map--property-listing {
+      margin: 0;
+      width: 100%; } }
 
 @font-face {
   font-family: 'map-icons';
@@ -1270,7 +1284,7 @@ abbr {
 .c-form__sale-or-rent {
   display: flex;
   justify-content: center;
-  padding: 1em 0 0; }
+  padding: 2em 0 0; }
   @media all and (min-width: 930px) {
     .c-form__sale-or-rent {
       position: absolute;
@@ -1526,6 +1540,45 @@ abbr {
 
 .c-property-item__description {
   font-size: 0.875rem; }
+
+/*------------------------------------*	#AGENT CALL TO ACTION
+\*------------------------------------*/
+.c-agent-cta {
+  color: #fff;
+  padding: 1em; }
+
+.c-agent-cta__info {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1em; }
+  .c-agent-cta__info > img {
+    border-radius: 6px;
+    margin: 0 1em 0 0;
+    width: 40%; }
+
+.c-agent-cta__agent-detail {
+  text-align: center; }
+  .c-agent-cta__agent-detail h2,
+  .c-agent-cta__agent-detail h3 {
+    margin: 0 0 1em; }
+
+.c-agent-cta__contact-icons {
+  height: 100%; }
+  .c-agent-cta__contact-icons a {
+    color: #fff; }
+  .c-agent-cta__contact-icons a:hover {
+    color: #d9d9d9; }
+  @media all and (max-width: 780px) {
+    .c-agent-cta__contact-icons {
+      margin: 0 0 0 auto; } }
+
+.c-agent-cta__contact-icon {
+  align-items: center;
+  display: flex;
+  padding: 0 0.8em; }
+
+.c-agent-cta__form {
+  text-align: center; }
 
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
@@ -2559,6 +2612,120 @@ abbr {
   .c-section-valuation__heading-info > h2 {
     margin: 0 auto 1rem 0; }
 
+/*------------------------------------*	#SELECTED PROPERTY SECTION
+\*------------------------------------*/
+.c-selected-property {
+  color: #fff;
+  margin-bottom: 0.5em;
+  padding: 1.5em;
+  position: relative; }
+  .c-selected-property > h2 {
+    margin: 0.5em 0 1em 0;
+    text-transform: uppercase; }
+
+.c-selected-property__title {
+  display: inline-block;
+  background: #000;
+  padding: 0.25em 0.5em;
+  text-transform: uppercase; }
+
+.c-selected-property__tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+.c-selected-property__tint:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("http://eatest.energisededge.com/wp-content/uploads/2017/01/Living-Room.jpg");
+  background-size: cover;
+  opacity: 0.2; }
+
+.c-selected-property__left {
+  margin: 1em 0; }
+  .c-selected-property__left img {
+    width: 100%; }
+  @media all and (min-width: 900px) {
+    .c-selected-property__left {
+      float: left;
+      width: 60%; } }
+
+.c-selected-property__description {
+  margin: 1em 0 0; }
+  .c-selected-property__description ul {
+    list-style-type: circle;
+    margin: 0px 0 0 4em; }
+  @media all and (min-width: 900px) {
+    .c-selected-property__description {
+      color: #595959; }
+      .c-selected-property__description ul {
+        color: #000; } }
+
+@media all and (min-width: 900px) {
+  .c-selected-property__detail-wrapper {
+    width: 26%;
+    margin: 0 0 0 auto; } }
+
+.c-selected-property__detail-grid {
+  color: #fff;
+  margin: 1em -0.5em;
+  overflow: hidden; }
+  .c-selected-property__detail-grid figure {
+    display: block;
+    align-items: initial; }
+  .c-selected-property__detail-grid .c-figure__media {
+    margin: 0 0.5em 0 0; }
+  .c-selected-property__detail-grid > div {
+    text-align: center;
+    width: 25%;
+    padding: 0.25em 0.5em;
+    float: left; }
+    .c-selected-property__detail-grid > div img {
+      height: 1.5em;
+      margin-bottom: 0; }
+    @media all and (min-width: 900px) {
+      .c-selected-property__detail-grid > div {
+        color: #fff;
+        width: 100%; }
+        .c-selected-property__detail-grid > div figure {
+          display: flex;
+          align-items: center; }
+        .c-selected-property__detail-grid > div > div {
+          margin: 0 0 0 6em;
+          text-align: left; } }
+
+.c-selected-property__detail-right {
+  color: #000; }
+  @media all and (min-width: 900px) {
+    .c-selected-property__detail-right {
+      width: 38%;
+      padding: 2em 0 0;
+      float: right; } }
+
+.c-selected-property__detail-info {
+  color: #fff; }
+  .c-selected-property__detail-info .c-selected-property__detail-info-wrapper {
+    border-left: solid #fff 4px;
+    padding: 0 1em; }
+  @media all and (min-width: 900px) {
+    .c-selected-property__detail-info {
+      color: #000; }
+      .c-selected-property__detail-info .c-selected-property__detail-info-wrapper {
+        border-left: solid #000 4px; } }
+
+.c-selected-property__detail-map {
+  margin: 2em 0 0; }
+
+.c-selected-property__detail-location .fa {
+  margin: 0 0.5em 0 0; }
+
 /*------------------------------------*	#FEATURED PROPERTY SECTION
 \*------------------------------------*/
 .c-featured-property {
@@ -2695,6 +2862,34 @@ abbr {
       .c-affiliated__grid > div {
         width: 25%;
         display: inline-block; } }
+
+/*------------------------------------*	#DETAILED PROPERTY SECTION
+\*------------------------------------*/
+.c-property-further-info {
+  display: block; }
+  @media all and (min-width: 900px) {
+    .c-property-further-info {
+      display: flex;
+      clear: both; } }
+
+.c-property-further-info__floorplan {
+  margin: 4em 0 1em;
+  width: 100%; }
+  .c-property-further-info__floorplan > img {
+    border: 0 none; }
+  @media all and (min-width: 900px) {
+    .c-property-further-info__floorplan {
+      margin: 0 1em;
+      width: 60%; }
+      .c-property-further-info__floorplan > img {
+        border: 1px solid #000; } }
+
+.c-property-further-info__agent-cta {
+  margin: 1em 0 0; }
+  @media all and (min-width: 900px) {
+    .c-property-further-info__agent-cta {
+      margin: 0 1em 0 0;
+      width: 38%; } }
 
 /*------------------------------------*	#SUBSCRIBE FOR UPDATES SECTION
 \*------------------------------------*/

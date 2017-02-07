@@ -112,7 +112,7 @@
 .slider__thumbnails {
     position:absolute;
     left:0px;
-    bottom:0px;
+    bottom:-12px;
     width:800px;
     height:100px;
 }
