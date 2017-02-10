@@ -102,7 +102,7 @@ Atomic design is philosophically complimentary with these CSS approaches:
 /*------------------------------------*    #FORMS
 \*------------------------------------*/
 .primary-colour {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*    #HEADINGS
 \*------------------------------------*/
@@ -136,16 +136,16 @@ Atomic design is philosophically complimentary with these CSS approaches:
  * 1) This sits overtop of the hero image when space permits
  */
 .c-block-hero__find-property {
-  background-color: #900603; }
+  background-color: #379292; }
   @media all and (min-width: 930px) {
     .c-block-hero__find-property {
-      background-color: rgba(144, 6, 3, 0.5); } }
+      background-color: rgba(55, 146, 146, 0.5); } }
   .c-block-hero:hover .c-block-hero__find-property,
   .c-block-hero:focus .c-block-hero__find-property {
-    background-color: #900603; }
+    background-color: #379292; }
 
 .c-form--listing-search {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#MEDIA BLOCK
 \*------------------------------------*/
@@ -155,48 +155,48 @@ Atomic design is philosophically complimentary with these CSS approaches:
  * 2) For more info, read http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
  */
 a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-media__headline {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*	#PROPERTY ITEM
 \*------------------------------------*/
 .c-property-item__overview > p {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*	#AGENT CALL TO ACTION
 \*------------------------------------*/
 .c-agent-cta {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#SOCIAL MEDIA
 \*------------------------------------*/
 .c-social-media {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#BLOG INDEX POST
 \*------------------------------------*/
 .c-blog-index-item__image > img {
-  border-bottom-color: #900603; }
+  border-bottom-color: #379292; }
 
 .c-blog-index-item__date {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*	#BLOG LINK
 \*------------------------------------*/
 .c-blog-link__tint {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#BLOG DETAIL POST
 \*------------------------------------*/
 .c-blog-detail-item__image img {
-  border-bottom-color: #900603; }
+  border-bottom-color: #379292; }
 
 /*------------------------------------*	#BLOG POPULAR POST
 \*------------------------------------*/
 .c-blog-popular-post-item__info {
-  border-left-color: #900603; }
+  border-left-color: #379292; }
 
 .c-blog-popular-post-item__actions > a {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
@@ -204,7 +204,7 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * Button
  */
 .c-text-btn--branded-button {
-  background: #900603; }
+  background: #379292; }
 
 /*------------------------------------*    #CAROUSEL
 \*------------------------------------*/
@@ -222,7 +222,7 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * Header
  */
 .header__contact-info {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*    #LOGO
 \*------------------------------------*/
@@ -245,10 +245,10 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * Section title
  */
 .c-section__title:after {
-  background: #900603; }
+  background: #379292; }
 
 .c-section__title--footer {
-  color: #900603; }
+  color: #379292; }
 
 /*------------------------------------*	#VALUATION SECTION
 \*------------------------------------*/
@@ -256,22 +256,22 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
  * 1) The valuation section containing a video element.
  */
 .c-section-valuation__tint {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#SELECTED PROPERTY SECTION
 \*------------------------------------*/
 .c-selected-property__tint {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#FEATURED PROPERTY SECTION
 \*------------------------------------*/
 .c-featured-property__tint {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*	#SUBSCRIBE FOR UPDATES SECTION
 \*------------------------------------*/
 .c-subscribe__tint {
-  background-color: #900603; }
+  background-color: #379292; }
 
 /*------------------------------------*    #TEXT
 \*------------------------------------*/
