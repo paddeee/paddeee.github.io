@@ -167,6 +167,37 @@ a.c-block-media:hover .c-block-media__headline, a.c-block-media:focus .c-block-m
 .c-agent-cta {
   background-color: #900603; }
 
+/*------------------------------------*	#SOCIAL MEDIA
+\*------------------------------------*/
+.c-social-media {
+  background-color: #900603; }
+
+/*------------------------------------*	#BLOG INDEX POST
+\*------------------------------------*/
+.c-blog-index-item__image > img {
+  border-bottom-color: #900603; }
+
+.c-blog-index-item__date {
+  color: #900603; }
+
+/*------------------------------------*	#BLOG LINK
+\*------------------------------------*/
+.c-blog-link__tint {
+  background-color: #900603; }
+
+/*------------------------------------*	#BLOG DETAIL POST
+\*------------------------------------*/
+.c-blog-detail-item__image img {
+  border-bottom-color: #900603; }
+
+/*------------------------------------*	#BLOG POPULAR POST
+\*------------------------------------*/
+.c-blog-popular-post-item__info {
+  border-left-color: #900603; }
+
+.c-blog-popular-post-item__actions > a {
+  color: #900603; }
+
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
 /**

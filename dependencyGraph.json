@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1486491658631,
+  "timestamp": 1486744534439,
   "graph": {
     "options": {
       "directed": true,
@@ -161,6 +161,22 @@
         }
       },
       {
+        "v": "01-molecules/blocks/agent.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-blog-detail/03-templates-02-blog-detail.rendered.html",
+          "lineagePattern": "templates-blog-detail"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/block-blog-link.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-blog-detail/03-templates-02-blog-detail.rendered.html",
+          "lineagePattern": "templates-blog-detail"
+        }
+      },
+      {
         "v": "01-molecules/blocks/block-hero.mustache",
         "value": {
           "compileState": "clean"
@@ -175,11 +191,51 @@
         }
       },
       {
+        "v": "01-molecules/blocks/block-social-media.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-blog-detail/03-templates-02-blog-detail.rendered.html",
+          "lineagePattern": "templates-blog-detail"
+        }
+      },
+      {
         "v": "01-molecules/blocks/block-tout.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-lists-tout-list/02-organisms-lists-tout-list.rendered.html",
           "lineagePattern": "organisms-tout-list"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/blog-comment-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-lists-blog-comment-list/02-organisms-lists-blog-comment-list.rendered.html",
+          "lineagePattern": "organisms-blog-comment-list"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/blog-detail-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-blog-detail/03-templates-02-blog-detail.rendered.html",
+          "lineagePattern": "templates-blog-detail"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/blog-index-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-lists-blog-index-list/02-organisms-lists-blog-index-list.rendered.html",
+          "lineagePattern": "organisms-blog-index-list"
+        }
+      },
+      {
+        "v": "01-molecules/blocks/blog-popular-post-item.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-lists-blog-popular-posts-list/02-organisms-lists-blog-popular-posts-list.rendered.html",
+          "lineagePattern": "organisms-blog-popular-posts-list"
         }
       },
       {
@@ -327,6 +383,30 @@
         }
       },
       {
+        "v": "02-organisms/lists/blog-comment-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-blog-detail/03-templates-02-blog-detail.rendered.html",
+          "lineagePattern": "templates-blog-detail"
+        }
+      },
+      {
+        "v": "02-organisms/lists/blog-index-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-blog-index/03-templates-01-blog-index.rendered.html",
+          "lineagePattern": "templates-blog-index"
+        }
+      },
+      {
+        "v": "02-organisms/lists/blog-popular-posts-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-sections-section-popular-posts/02-organisms-sections-section-popular-posts.rendered.html",
+          "lineagePattern": "organisms-section-popular-posts"
+        }
+      },
+      {
         "v": "02-organisms/lists/media-list.mustache",
         "value": {
           "compileState": "clean",
@@ -383,6 +463,14 @@
         }
       },
       {
+        "v": "02-organisms/sections/section-popular-posts.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-blog-index/03-templates-01-blog-index.rendered.html",
+          "lineagePattern": "templates-blog-index"
+        }
+      },
+      {
         "v": "02-organisms/sections/section-valuation.mustache",
         "value": {
           "compileState": "clean",
@@ -402,8 +490,8 @@
         "v": "02-organisms/sections/subscribe.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-00-homepage/03-templates-00-homepage.rendered.html",
-          "lineagePattern": "templates-homepage"
+          "lineagePath": "../../patterns/03-templates-01-blog-index/03-templates-01-blog-index.rendered.html",
+          "lineagePattern": "templates-blog-index"
         }
       },
       {
@@ -460,6 +548,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-01-blog-index/04-pages-01-blog-index.rendered.html",
           "lineagePattern": "pages-blog-index"
+        }
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-02-blog-detail/04-pages-02-blog-detail.rendered.html",
+          "lineagePattern": "pages-blog-detail"
         }
       },
       {
@@ -600,8 +696,18 @@
         "value": {}
       },
       {
+        "v": "01-molecules/blocks/block-social-media.mustache",
+        "w": "01-molecules/forms/field.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules/blocks/block-tout.mustache",
         "w": "00-atoms/images/landscape.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/blocks/blog-index-item.mustache",
+        "w": "00-atoms/buttons/button.mustache",
         "value": {}
       },
       {
@@ -665,6 +771,21 @@
         "value": {}
       },
       {
+        "v": "02-organisms/lists/blog-comment-list.mustache",
+        "w": "01-molecules/blocks/blog-comment-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/lists/blog-index-list.mustache",
+        "w": "01-molecules/blocks/blog-index-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/lists/blog-popular-posts-list.mustache",
+        "w": "01-molecules/blocks/blog-popular-post-item.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/lists/property-list.mustache",
         "w": "01-molecules/blocks/property-item.mustache",
         "value": {}
@@ -707,6 +828,11 @@
       {
         "v": "02-organisms/sections/section-media-list.mustache",
         "w": "01-molecules/messaging/overlay.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/sections/section-popular-posts.mustache",
+        "w": "02-organisms/lists/blog-popular-posts-list.mustache",
         "value": {}
       },
       {
@@ -821,16 +947,86 @@
       },
       {
         "v": "03-templates/01-blog-index.mustache",
+        "w": "02-organisms/sections/subscribe.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-blog-index.mustache",
         "w": "02-organisms/text/page-header.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-blog-index.mustache",
-        "w": "02-organisms/sections/section-media-list.mustache",
+        "w": "02-organisms/text/text-blob.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-blog-index.mustache",
+        "w": "02-organisms/lists/blog-index-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-blog-index.mustache",
+        "w": "01-molecules/blocks/block-social-media.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-blog-index.mustache",
+        "w": "01-molecules/blocks/block-blog-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-blog-index.mustache",
+        "w": "02-organisms/sections/section-popular-posts.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-blog-index.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "02-organisms/00-global/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "01-molecules/blocks/blog-detail-item.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "02-organisms/text/text-blob.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "02-organisms/sections/section-media-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "02-organisms/lists/blog-comment-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "01-molecules/blocks/agent.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "01-molecules/blocks/block-social-media.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
+        "w": "01-molecules/blocks/block-blog-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-blog-detail.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -941,7 +1137,7 @@
       },
       {
         "v": "04-pages/02-blog-detail.mustache",
-        "w": "03-templates/2-detail.mustache",
+        "w": "03-templates/02-blog-detail.mustache",
         "value": {}
       },
       {

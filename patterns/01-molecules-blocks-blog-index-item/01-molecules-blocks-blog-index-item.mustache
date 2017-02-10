@@ -1,0 +1,29 @@
+<div class="c-blog-index-item">
+  <div class="c-blog-index-item__image">
+    <h2>{{ category }}</h2>
+    <a href="{{ url }}" class="zoom-image">
+      <img src="{{ imgSquare.src }}" alt="{{ imgSquare.alt }}" />
+    </a>
+  </div>
+  <div class="c-blog-index-item__detail">
+    <div class="c-blog-index-item__date">{{ date }}</div>
+    <div class="c-blog-index-item__info">
+      <h3 class="upper-case">
+        <a href="{{ url }}">{{ headline.short }}</a>
+      </h3>
+      <p>{{ excerpt.medium }}</p>
+      <div class="c-blog-index-item__calls-to-action">
+        <div class="c-blog-index-item__contact-icons">
+          <a href="#" title="Facebook"><span class="c-blog-index-item__contact-icon  fa  fa-2x  fa-facebook"></span></a>
+          <a href="#" title="Google"><span class="c-blog-index-item__contact-icon  fa  fa-2x  fa-google"></span></a>
+          <a href="#" title="Twitter"><span class="c-blog-index-item__contact-icon  fa  fa-2x  fa-twitter"></span></a>
+        </div>
+        <div class="c-blog-index-item__actions">
+          {{> atoms-button(btnText: "Find Out More") }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<!-- end c-property-item -->

@@ -1541,6 +1541,13 @@ abbr {
 .c-property-item__description {
   font-size: 0.875rem; }
 
+/*------------------------------------*	#AGENT
+\*------------------------------------*/
+.c-agent__agent-detail {
+  text-align: center; }
+  .c-agent__agent-detail h3 > span {
+    display: block; }
+
 /*------------------------------------*	#AGENT CALL TO ACTION
 \*------------------------------------*/
 .c-agent-cta {
@@ -1579,6 +1586,197 @@ abbr {
 
 .c-agent-cta__form {
   text-align: center; }
+
+/*------------------------------------*	#SOCIAL MEDIA
+\*------------------------------------*/
+.c-social-media {
+  color: #fff;
+  padding: 1em; }
+
+.c-social-media__info {
+  text-align: center; }
+
+.c-social-media__contact-icons {
+  height: 100%; }
+  .c-social-media__contact-icons a {
+    color: #fff; }
+  .c-social-media__contact-icons a:hover {
+    color: #d9d9d9; }
+  @media all and (max-width: 780px) {
+    .c-social-media__contact-icons {
+      margin: 0 0 0 auto; } }
+
+.c-social-media__contact-icon {
+  margin: 0 0.5em 0 0; }
+
+.c-social-media__form {
+  margin: 1em 0 0; }
+  .c-social-media__form > p {
+    text-align: center; }
+
+.c-social-media__search {
+  position: relative; }
+  .c-social-media__search input {
+    text-indent: 30px; }
+  .c-social-media__search .fa-search {
+    color: #808080;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px; }
+
+/*------------------------------------*	#BLOG INDEX POST
+\*------------------------------------*/
+.c-blog-index-item {
+  margin: 0 0 2em; }
+
+.c-blog-index-item__image {
+  max-height: 240px;
+  overflow: hidden;
+  position: relative; }
+  .c-blog-index-item__image > h2 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    display: inline-block;
+    background: #000;
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem; }
+  .c-blog-index-item__image img {
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    margin-top: -20%;
+    width: 100%; }
+
+.c-blog-index-item__date {
+  font-weight: bold;
+  text-align: right; }
+
+.c-blog-index-item__info {
+  padding: 0 0 0 1em;
+  border-left: 7px solid #000; }
+
+.c-blog-index-item__calls-to-action {
+  align-items: center;
+  display: flex; }
+
+.c-blog-index-item__actions {
+  margin: 0 0 0 auto; }
+
+.c-blog-index-item__contact-icon {
+  margin: 0 0.5em 0 0; }
+
+/*------------------------------------*	#BLOG DETAIL POST
+\*------------------------------------*/
+.c-blog-detail-item__image {
+  position: relative; }
+  .c-blog-detail-item__image > h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 1em;
+    display: inline-block;
+    background: #000;
+    padding: 0.25em 0.5em;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem; }
+  .c-blog-detail-item__image img {
+    border-bottom-width: 14px;
+    border-bottom-style: solid;
+    height: 60vh;
+    width: 100%; }
+
+.c-blog-index-item__date {
+  font-weight: bold;
+  text-align: right; }
+
+.c-blog-index-item__info {
+  padding: 0 0 0 1em;
+  border-left: 7px solid #000; }
+
+.c-blog-index-item__calls-to-action {
+  align-items: center;
+  display: flex; }
+
+.c-blog-index-item__actions {
+  margin: 0 0 0 auto; }
+
+.c-blog-index-item__contact-icon {
+  margin: 0 0.5em 0 0; }
+
+/*------------------------------------*	#BLOG COMMENTS
+\*------------------------------------*/
+.c-blog-comment-item {
+  font-size: 0.875rem;
+  margin: 0 0 1em; }
+
+.c-blog-comment__info {
+  display: flex; }
+  .c-blog-comment__info span:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 auto 0.5em 0; }
+
+.c-blog-comment__comment {
+  padding: 0 0 0 1em;
+  border-left-width: 7px;
+  border-left-style: solid;
+  height: 5em; }
+
+/*------------------------------------*	#BLOG POPULAR POST
+\*------------------------------------*/
+.c-blog-popular-post-item {
+  font-size: 0.875rem; }
+
+.c-blog-popular-post-item__info {
+  padding: 0 0 0 1em;
+  border-left-width: 7px;
+  border-left-style: solid; }
+
+.c-blog-popular-post-item__actions {
+  margin: 0 0 1em;
+  text-align: right; }
+  .c-blog-popular-post-item__actions > a {
+    font-weight: bold; }
+  .c-blog-popular-post-item__actions > a:hover,
+  .c-blog-popular-post-item__actions a:active {
+    color: #000; }
+
+/*------------------------------------*	#BLOG LINK
+\*------------------------------------*/
+.c-blog-link {
+  position: relative;
+  text-align: center;
+  margin: 0 0 1em; }
+  .c-blog-link a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 2em 0; }
+  .c-blog-link a:hover,
+  .c-blog-link a:active {
+    color: #000; }
+
+.c-blog-link__tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+.c-blog-link__tint:before {
+  background-image: url("http://eatest.energisededge.com/wp-content/uploads/2017/01/Living-Room.jpg");
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  opacity: 0.4; }
 
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
@@ -2731,11 +2929,14 @@ abbr {
 .c-featured-property {
   color: #fff;
   margin-bottom: 0.5em;
-  padding: 1.5em;
+  padding: 8em 1.5em 1.5em;
   position: relative; }
   .c-featured-property > h2 {
     margin: 0.5em 0 1em 0;
     text-transform: uppercase; }
+  @media all and (min-width: 900px) {
+    .c-featured-property {
+      padding: 1.5em; } }
 
 .c-featured-property__tint {
   position: absolute;
@@ -2759,11 +2960,14 @@ abbr {
 .c-featured-property__title {
   position: absolute;
   left: 2em;
-  top: -1em;
+  top: 6em;
   display: inline-block;
   background: #000;
   padding: 0.25em 0.5em;
   text-transform: uppercase; }
+  @media all and (min-width: 900px) {
+    .c-featured-property__title {
+      top: -1em; } }
 
 .c-featured-property__image {
   margin: 1em 0; }
@@ -2959,6 +3163,8 @@ abbr {
  */
 .s-text-passage {
   margin-bottom: 1rem; }
+  .s-text-passage h2 {
+    margin: 0 0 0.5em; }
 
 /**
  * Image within text passage
