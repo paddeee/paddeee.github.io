@@ -1,4 +1,4 @@
 var config = {
-  primaryColour: 'rgba(144,6,3,1)',
+  primaryColour: '#379292',
   secondaryColour: '#DB4437'
 };
