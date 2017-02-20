@@ -2188,7 +2188,7 @@ abbr {
 .c-logo {
   display: block;
   max-height: 72px;
-  max-width: 100px;
+  max-width: 130px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
@@ -2674,7 +2674,6 @@ abbr {
  * Section
  */
 .c-section {
-  height: 100%;
   position: relative;
   margin: 0 0 2em; }
   @media all and (min-width: 39.8em) {
@@ -3104,6 +3103,8 @@ abbr {
   position: relative; }
   .c-subscribe > h2 {
     text-transform: uppercase; }
+  .c-subscribe input {
+    max-width: 500px; }
 
 .c-subscribe__tint {
   position: absolute;
@@ -3311,10 +3312,6 @@ progress[value]::-webkit-progress-bar {
     .l--two-col .l-main {
       width: 70%;
       padding-right: 2em; } }
-  @media all and (min-width: 39.8em) {
-    .l--two-col .l-sidebar {
-      display: flex;
-      height: 100%; } }
   @media all and (min-width: 50em) {
     .l--two-col .l-sidebar {
       flex-direction: column;
