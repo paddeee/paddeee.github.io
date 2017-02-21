@@ -142,7 +142,7 @@
         <h2 class="c-form__title">FIND A PROPERTY</h2>
         <p>Discover your perfect home in seconds</p>
 
-        <div class="c-form__split">
+        <div class="c-form__split  c-form__location">
           <div class="c-field">
             <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
             <span role="status" aria-live="polite" class="is-vishidden"></span>
@@ -150,8 +150,8 @@
           </div>
           <!--end c-field-->
 
-          <div class="c-field">
-            <select id="bedroom-select-id">
+          <div class="c-field ">
+            <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -173,7 +173,7 @@
           <!--end c-field-->
 
         </div>
-        <div class="c-combined-field">
+        <div class="c-combined-field c-form__price">
           <div class="c-combined-field__field">
             <label for="MinimumPrice">£</label>
             <select id="MinimumPrice">
@@ -182,7 +182,7 @@
         </select>
             <span role="status" aria-live="polite" class="is-vishidden"></span>
           </div>
-          <div class="c-combined-field__separator">-</div>
+          <div class="c-combined-field__separator">to</div>
           <div class="c-combined-field__field">
             <label for="MaximumPrice">£</label>
             <select id="MaximumPrice">
@@ -195,7 +195,7 @@
         </div>
         <!--end c-field-->
 
-        <div class="c-combined-field">
+        <div class="c-combined-field c-form__beds">
           <div class="c-combined-field__field">
             <select id="MinimumBeds">
             <optgroup label="Min Beds">
@@ -203,7 +203,7 @@
         </select>
             <span role="status" aria-live="polite" class="is-vishidden"></span>
           </div>
-          <div class="c-combined-field__separator">-</div>
+          <div class="c-combined-field__separator">to</div>
           <div class="c-combined-field__field">
             <select id="MaximumBeds">
             <optgroup label="Max Beds">
@@ -215,8 +215,8 @@
         </div>
         <!--end c-field-->
 
-        <div class="c-field">
-          <select id="bedroom-select-id">
+        <div class="c-field c-form__type">
+          <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -237,8 +237,8 @@
         </div>
         <!--end c-field-->
 
-        <div class="c-field">
-          <select id="bedroom-select-id">
+        <div class="c-field c-form__features">
+          <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>

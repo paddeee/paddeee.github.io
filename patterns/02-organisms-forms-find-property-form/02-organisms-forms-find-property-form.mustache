@@ -10,11 +10,12 @@
     <h2 class="c-form__title">{{ title }}</h2>
     <p>{{ summary }}</p>
 
-    <div class="c-form__split">
+    <div class="c-form__split  c-form__location">
       {{> molecules-field(id: "SearchAreaField", type: "text", label: "Search Area") }} {{> molecules-select-dropdown(id: "Radius Dropdown", label: "Search Area") }}
     </div>
-    {{> molecules-combined-dropdown(symbol: "£", id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }} {{> molecules-combined-dropdown(id1: "MinimumBeds", id2: "MaximumBeds", label1: "Min Beds", label2: "Max
-    Beds") }} {{> molecules-select-dropdown }} {{> molecules-select-dropdown }}
+    {{> molecules-combined-dropdown(symbol: "£", className: "c-form__price", id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }} {{> molecules-combined-dropdown(className: "c-form__beds", id1: "MinimumBeds",
+    id2: "MaximumBeds", label1: "Min Beds", label2: "Max Beds") }} {{> molecules-select-dropdown(className: "c-form__type", id: "PropertyType", label: "Property Type") }} {{> molecules-select-dropdown(className: "c-form__features", id: "PropertyFeatures",
+    label: "Property Features") }}
 
     <div class="c-form__actions">
       {{> atoms-button(btnText: "Search") }}

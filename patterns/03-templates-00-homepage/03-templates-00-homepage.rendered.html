@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width" />
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;lang=en">
-  <link rel="stylesheet" href="../../css/structure.css?1487584340701" media="all" />
-  <link rel="stylesheet" href="../../css/branding.css?1487584340701" media="all" />
-  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487584340701" media="all" />
-  <link rel="stylesheet" href="../../css/jssor-slider.css?1487584340701" media="all" />
-  <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css?1487584340701" media="all" />
+  <link rel="stylesheet" href="../../css/structure.css?1487694381547" media="all" />
+  <link rel="stylesheet" href="../../css/branding.css?1487694381547" media="all" />
+  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1487694381547" media="all" />
+  <link rel="stylesheet" href="../../css/jssor-slider.css?1487694381547" media="all" />
+  <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css?1487694381547" media="all" />
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
   <!-- never cache patterns -->
@@ -21,8 +21,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487584340701" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487584340701" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1487694381547" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1487694381547" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -30,7 +30,7 @@
 
 <body class="body">
 
-  <header class="header" role="banner">
+  <header class="header " role="banner">
 
     <div class="header__contact-info">
       <div class="header__phone-info">
@@ -90,7 +90,7 @@
     <!-- end c-header -->
   </header>
 
-  <main role="main">
+  <main role="main" class="main">
 
     <div class="c-block-hero">
       <div id="HeroSlider" class="slider  slider--hero">
@@ -236,7 +236,7 @@
             <h2 class="c-form__title">FIND A PROPERTY</h2>
             <p>Discover your perfect home in seconds</p>
 
-            <div class="c-form__split">
+            <div class="c-form__split  c-form__location">
               <div class="c-field">
                 <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
                 <span role="status" aria-live="polite" class="is-vishidden"></span>
@@ -244,8 +244,8 @@
               </div>
               <!--end c-field-->
 
-              <div class="c-field">
-                <select id="bedroom-select-id">
+              <div class="c-field ">
+                <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -267,7 +267,7 @@
               <!--end c-field-->
 
             </div>
-            <div class="c-combined-field">
+            <div class="c-combined-field c-form__price">
               <div class="c-combined-field__field">
                 <label for="MinimumPrice">£</label>
                 <select id="MinimumPrice">
@@ -276,7 +276,7 @@
         </select>
                 <span role="status" aria-live="polite" class="is-vishidden"></span>
               </div>
-              <div class="c-combined-field__separator">-</div>
+              <div class="c-combined-field__separator">to</div>
               <div class="c-combined-field__field">
                 <label for="MaximumPrice">£</label>
                 <select id="MaximumPrice">
@@ -289,7 +289,7 @@
             </div>
             <!--end c-field-->
 
-            <div class="c-combined-field">
+            <div class="c-combined-field c-form__beds">
               <div class="c-combined-field__field">
                 <select id="MinimumBeds">
             <optgroup label="Min Beds">
@@ -297,7 +297,7 @@
         </select>
                 <span role="status" aria-live="polite" class="is-vishidden"></span>
               </div>
-              <div class="c-combined-field__separator">-</div>
+              <div class="c-combined-field__separator">to</div>
               <div class="c-combined-field__field">
                 <select id="MaximumBeds">
             <optgroup label="Max Beds">
@@ -309,8 +309,8 @@
             </div>
             <!--end c-field-->
 
-            <div class="c-field">
-              <select id="bedroom-select-id">
+            <div class="c-field c-form__type">
+              <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -331,8 +331,8 @@
             </div>
             <!--end c-field-->
 
-            <div class="c-field">
-              <select id="bedroom-select-id">
+            <div class="c-field c-form__features">
+              <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
                 <option>0</option>
@@ -935,10 +935,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1487584340701">
+  <script id="pl-js-polyfill-insert-1487694381547">
     (function() {
       if (self != top) {
-        var cb = '1487584340701';
+        var cb = '1487694381547';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -948,10 +948,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1487584340701">
+  <script id="pl-js-insert-1487694381547">
     (function() {
       if (self != top) {
-        var cb = '1487584340701';
+        var cb = '1487694381547';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']
@@ -971,6 +971,8 @@
   <script type="text/javascript" src="/js/overlay.js"></script>
   <script type="text/javascript" src="/js/slider.js"></script>
   <script type="text/javascript" src="/js/scroll-header.js"></script>
+  <script type="text/javascript" src="/js/scroll-filters-header.js"></script>
+  <script type="text/javascript" src="/js/filters.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCti15-oQcLOFpYx8wB6dg1aJQtLFogJk&callback=initMap" async defer></script>
   <script type="text/javascript" src="/js/map.js"></script>
 </body>

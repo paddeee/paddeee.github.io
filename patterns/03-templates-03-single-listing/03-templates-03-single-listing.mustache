@@ -1,7 +1,7 @@
-{{> organisms-header }}
-<main role="main">
+{{> organisms-header:header--relative }}
+<main role="main" class="main  main--relative">
 
-  {{> organisms-selected-property }} {{> organisms-property-further-info }}
+  {{> organisms-filter-form:c-form--listing-search }} {{> organisms-selected-property }} {{> organisms-property-further-info }}
 
   <div class="l">
     <h2>Similar Properties</h2>
@@ -9,7 +9,7 @@
   </div>
 
   <div>
-    {{> organisms-find-property-form:c-form--listing-search }}
+    {{> organisms-filter-form:c-form--listing-search }}
   </div>
 
   {{> organisms-footer }}

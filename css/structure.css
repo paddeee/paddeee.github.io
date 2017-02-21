@@ -551,6 +551,19 @@ dd {
     [role=main] {
       padding-top: 98px; } }
 
+.main--relative {
+  padding-top: 0;
+  position: relative; }
+
+.main--fixed {
+  padding-top: 46px; }
+  .main--fixed .c-form--listing-search {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+
 /*------------------------------------*    #MAPS
 \*------------------------------------*/
 /*------------------------------------*    #VARIABLES
@@ -559,9 +572,7 @@ dd {
  * Maps
  */
 .map--property-listing {
-  height: 24rem;
-  margin: 0 0 -5em -2em;
-  width: calc(100% + 4em); }
+  height: 24rem; }
   @media all and (min-width: 900px) {
     .map--property-listing {
       margin: 0;
@@ -1122,6 +1133,10 @@ dd {
 
 /*------------------------------------*    #MEDIA ELEMENTS
 \*------------------------------------*/
+/* IE FIx */
+.fit-vids-style {
+  height: 0; }
+
 /**
  * Make media elements responsive
  */
@@ -1279,7 +1294,9 @@ abbr {
       bottom: 0;
       left: 5vw;
       width: 35%;
-      border-radius: 6px 6px 0 0; } }
+      border-radius: 6px 6px 0 0; }
+      .c-block-hero__find-property .c-form__sale-or-rent-form {
+        padding: 3em 0 0; } }
 
 .c-form__sale-or-rent {
   display: flex;
@@ -1299,31 +1316,178 @@ abbr {
     display: flex;
     margin: 0 0 0 0.25em; }
 
-.c-form__sale-or-rent-form {
-  padding: 1em 0 0.5em; }
-  @media all and (min-width: 930px) {
-    .c-form__sale-or-rent-form {
-      padding: 3em 0 0; } }
-
+/**
+ * Filter Bar form
+ */
 .c-form--listing-search {
+  background-color: #000;
   color: #fff; }
+  .c-form--listing-search input {
+    border: 0 none;
+    border-radius: 0; }
+  .c-form--listing-search select {
+    min-width: 10em;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    border: 0 none;
+    border-radius: 6px;
+    outline: none;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat; }
   .c-form--listing-search .c-form__sale-or-rent {
     display: none; }
-  .c-form--listing-search .c-form__sale-or-rent-form h2 {
-    margin: 0.5em 0; }
-  .c-form--listing-search .c-form__sale-or-rent-form > p {
-    display: none; }
-  .c-form--listing-search .c-form__sale-or-rent-form .c-field,
-  .c-form--listing-search .c-form__sale-or-rent-form .c-combined-field {
-    font-size: 0.75rem;
-    margin: 0 auto 0.65rem; }
-  @media all and (min-width: 780px) {
-    .c-form--listing-search .c-form__sale-or-rent-form {
-      padding: 1em 0 0.5em; }
+  .c-form--listing-search .c-form__sale-or-rent-form {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    padding: 0 0.5em; }
+    .c-form--listing-search .c-form__sale-or-rent-form h2 {
+      margin: 0.5em 0; }
+    .c-form--listing-search .c-form__sale-or-rent-form > p {
+      display: none; }
+    .c-form--listing-search .c-form__sale-or-rent-form .c-field,
+    .c-form--listing-search .c-form__sale-or-rent-form .c-combined-field {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      font-size: 0.75rem;
+      margin: 0; }
+    .c-form--listing-search .c-form__sale-or-rent-form .c-combined-field__separator {
+      padding: 0 1em; }
+    .c-form--listing-search .c-form__sale-or-rent-form .c-form__beds,
+    .c-form--listing-search .c-form__sale-or-rent-form .c-form__price,
+    .c-form--listing-search .c-form__sale-or-rent-form .c-form__type,
+    .c-form--listing-search .c-form__sale-or-rent-form .c-form__features {
+      border-left: 1px solid #53535F;
+      padding: 0 1em; }
+    .c-form--listing-search .c-form__sale-or-rent-form .c-form__filters-link {
+      border-left: 1px solid #53535F;
+      display: flex;
+      margin: 0 1em;
+      padding: 0.65em 0 0 1em; }
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__filters-link > span {
+        margin: 0.25em 0 0 0.5em; }
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__filters-link a {
+        color: #fff; }
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__filters-link a:hover {
+        color: #d9d9d9; }
+    @media all and (min-width: 780px) {
       .c-form--listing-search .c-form__sale-or-rent-form h2 {
         margin: 0 0 0.5em; } }
+    @media all and (max-width: 44em) {
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__beds {
+        display: none; } }
+    @media all and (max-width: 64em) {
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__price {
+        display: none; } }
+    @media all and (max-width: 75em) {
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__type {
+        display: none; } }
+    @media all and (max-width: 80em) {
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__features {
+        display: none; } }
+    @media all and (min-width: 80em) {
+      .c-form--listing-search .c-form__sale-or-rent-form .c-form__filters-link {
+        display: none; } }
+  .c-form--listing-search .c-form__split {
+    display: flex;
+    flex: 3;
+    padding: 0 1em 0 0; }
+    .c-form--listing-search .c-form__split input {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-right: 1px solid #808080;
+      outline: none; }
+      @media all and (max-width: 23em) {
+        .c-form--listing-search .c-form__split input {
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px; } }
+    .c-form--listing-search .c-form__split select {
+      appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
+      border: 0 none;
+      border-radius: 0;
+      min-width: 125px;
+      outline: none;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      padding: 0 0 0 0.5em; }
+    .c-form--listing-search .c-form__split .c-field {
+      align-items: initial;
+      display: flex;
+      flex: initial;
+      margin: 0.5em 0; }
+    .c-form--listing-search .c-form__split .c-field:first-child {
+      flex: 1; }
+    @media all and (max-width: 23em) {
+      .c-form--listing-search .c-form__split select {
+        display: none; } }
   .c-form--listing-search .c-form__actions {
     margin: 0.5em 0; }
+
+.c-form__hidden-filters {
+  display: none;
+  position: fixed;
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  color: #fff; }
+  @media all and (min-width: 44em) {
+    .c-form__hidden-filters .c-form__beds {
+      display: none; } }
+  @media all and (min-width: 64em) {
+    .c-form__hidden-filters .c-form__price {
+      display: none; } }
+  @media all and (min-width: 75em) {
+    .c-form__hidden-filters .c-form__type {
+      display: none; } }
+  @media all and (min-width: 80em) {
+    .c-form__hidden-filters .c-form__features {
+      display: none; } }
+  .c-form__hidden-filters .c-form__sale-or-rent {
+    display: none; }
+  .c-form__hidden-filters .c-form__sale-or-rent-form {
+    padding: 1em 0 0; }
+    .c-form__hidden-filters .c-form__sale-or-rent-form .c-form__location {
+      display: none; }
+
+.c-form__hidden-filters--ie {
+  display: block;
+  position: relative;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+  @media all and (min-width: 44em) {
+    .c-form__hidden-filters--ie .c-form__beds {
+      display: flex; } }
+  @media all and (min-width: 64em) {
+    .c-form__hidden-filters--ie .c-form__price {
+      display: flex; } }
+  @media all and (min-width: 75em) {
+    .c-form__hidden-filters--ie .c-form__type {
+      display: flex; } }
+  @media all and (min-width: 80em) {
+    .c-form__hidden-filters--ie .c-form__features {
+      display: flex; } }
+  .c-form__hidden-filters--ie .c-form__sale-or-rent-form .c-form__location {
+    display: flex; }
+  .c-form__hidden-filters--ie .c-form__actions {
+    margin: 0;
+    padding: 0 0 1em; }
+
+.c-form__hidden-filters--active {
+  display: block; }
 
 /*------------------------------------*	#MEDIA BLOCK
 \*------------------------------------*/
@@ -2088,6 +2252,9 @@ abbr {
   left: 0;
   width: 100%;
   z-index: 1000; }
+
+.header--relative {
+  position: relative; }
 
 .header__contact-info {
   align-items: center;
@@ -2928,7 +3095,7 @@ abbr {
 .c-featured-property {
   color: #fff;
   margin-bottom: 0.5em;
-  padding: 8em 1.5em 1.5em;
+  padding: 3em 1.5em 1.5em;
   position: relative; }
   .c-featured-property > h2 {
     margin: 0.5em 0 1em 0;
@@ -2959,7 +3126,7 @@ abbr {
 .c-featured-property__title {
   position: absolute;
   left: 2em;
-  top: 6em;
+  top: 1em;
   display: inline-block;
   background: #000;
   padding: 0.25em 0.5em;

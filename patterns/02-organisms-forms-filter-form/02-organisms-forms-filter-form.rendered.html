@@ -30,20 +30,11 @@
 
 <body class="body">
 
-  <form class="c-form  c-form--stacked-centre " method="post" action="">
-
-    <div class="c-form__sale-or-rent">
-      <div class="c-form__sale-button-holder"><button class="c-btn ">For Sale</button>
-      </div>
-      <div class="c-form__rent-button-holder"><button class="c-btn active">For Rent</button>
-      </div>
-    </div>
+  <form class="c-form  " method="post" action="">
 
     <div class="c-form__sale-or-rent-form">
-      <h2 class="c-form__title">FIND A PROPERTY</h2>
-      <p>Discover your perfect home in seconds</p>
 
-      <div class="c-form__split  c-form__location">
+      <div class="c-form__split">
         <div class="c-field">
           <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
           <span role="status" aria-live="polite" class="is-vishidden"></span>
@@ -51,7 +42,7 @@
         </div>
         <!--end c-field-->
 
-        <div class="c-field ">
+        <div class="c-field c-form__radius">
           <select id="DropdownID">
         <optgroup label="Label">
                 <option>Default</option>
@@ -161,13 +152,152 @@
       <!--end c-field-->
 
 
-      <div class="c-form__actions">
-        <button class="c-btn ">Search</button>
-
-      </div>
+      <div class="c-form__filters-link"><a href="#">Filters <span class="fa  fa-arrow-down"></span></a></div>
     </div>
   </form>
   <!--end c-form--stacked-->
+
+  <div class="c-form__hidden-filters">
+    <form class="c-form  c-form--stacked-centre c-form--hidden-filters" method="post" action="">
+
+      <div class="c-form__sale-or-rent">
+        <div class="c-form__sale-button-holder"><button class="c-btn ">For Sale</button>
+        </div>
+        <div class="c-form__rent-button-holder"><button class="c-btn active">For Rent</button>
+        </div>
+      </div>
+
+      <div class="c-form__sale-or-rent-form">
+        <h2 class="c-form__title">FIND A PROPERTY</h2>
+        <p>Discover your perfect home in seconds</p>
+
+        <div class="c-form__split  c-form__location">
+          <div class="c-field">
+            <input id="SearchAreaField" type="text" placeholder="Search Area" value="" />
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+          </div>
+          <!--end c-field-->
+
+          <div class="c-field ">
+            <select id="DropdownID">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+          </div>
+          <!--end c-field-->
+
+        </div>
+        <div class="c-combined-field c-form__price">
+          <div class="c-combined-field__field">
+            <label for="MinimumPrice">£</label>
+            <select id="MinimumPrice">
+            <optgroup label="Price From">
+            </optgroup>
+        </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+          </div>
+          <div class="c-combined-field__separator">to</div>
+          <div class="c-combined-field__field">
+            <label for="MaximumPrice">£</label>
+            <select id="MaximumPrice">
+            <optgroup label="Price To">
+            </optgroup>
+        </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+          </div>
+
+        </div>
+        <!--end c-field-->
+
+        <div class="c-combined-field c-form__beds">
+          <div class="c-combined-field__field">
+            <select id="MinimumBeds">
+            <optgroup label="Min Beds">
+            </optgroup>
+        </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+          </div>
+          <div class="c-combined-field__separator">to</div>
+          <div class="c-combined-field__field">
+            <select id="MaximumBeds">
+            <optgroup label="Max Beds">
+            </optgroup>
+        </select>
+            <span role="status" aria-live="polite" class="is-vishidden"></span>
+          </div>
+
+        </div>
+        <!--end c-field-->
+
+        <div class="c-field c-form__type">
+          <select id="DropdownID">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+        </div>
+        <!--end c-field-->
+
+        <div class="c-field c-form__features">
+          <select id="DropdownID">
+        <optgroup label="Label">
+                <option>Default</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+        </optgroup>
+    </select>
+          <span role="status" aria-live="polite" class="is-vishidden"></span>
+
+        </div>
+        <!--end c-field-->
+
+
+        <div class="c-form__actions">
+          <button class="c-btn ">Search</button>
+
+        </div>
+      </div>
+    </form>
+    <!--end c-form--stacked-->
+
+  </div>
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
@@ -175,9 +305,6 @@
       "cssEnabled": false,
       "patternLineageExists": true,
       "patternLineages": [{
-        "lineagePattern": "atoms-button",
-        "lineagePath": "../../patterns/00-atoms-buttons-button/00-atoms-buttons-button.rendered.html"
-      }, {
         "lineagePattern": "molecules-field",
         "lineagePath": "../../patterns/01-molecules-forms-field/01-molecules-forms-field.rendered.html"
       }, {
@@ -186,11 +313,11 @@
       }, {
         "lineagePattern": "molecules-combined-dropdown",
         "lineagePath": "../../patterns/01-molecules-forms-combined-dropdown/01-molecules-forms-combined-dropdown.rendered.html"
+      }, {
+        "lineagePattern": "organisms-find-property-form",
+        "lineagePath": "../../patterns/02-organisms-forms-find-property-form/02-organisms-forms-find-property-form.rendered.html"
       }],
       "lineage": [{
-        "lineagePattern": "atoms-button",
-        "lineagePath": "../../patterns/00-atoms-buttons-button/00-atoms-buttons-button.rendered.html"
-      }, {
         "lineagePattern": "molecules-field",
         "lineagePath": "../../patterns/01-molecules-forms-field/01-molecules-forms-field.rendered.html"
       }, {
@@ -199,37 +326,34 @@
       }, {
         "lineagePattern": "molecules-combined-dropdown",
         "lineagePath": "../../patterns/01-molecules-forms-combined-dropdown/01-molecules-forms-combined-dropdown.rendered.html"
+      }, {
+        "lineagePattern": "organisms-find-property-form",
+        "lineagePath": "../../patterns/02-organisms-forms-find-property-form/02-organisms-forms-find-property-form.rendered.html"
       }],
       "patternLineageRExists": true,
       "patternLineagesR": [{
-        "lineagePattern": "molecules-block-hero",
-        "lineagePath": "../../patterns/01-molecules-blocks-block-hero/01-molecules-blocks-block-hero.rendered.html"
+        "lineagePattern": "templates-listing",
+        "lineagePath": "../../patterns/03-templates-03-listing/03-templates-03-listing.rendered.html"
       }, {
-        "lineagePattern": "organisms-filter-form",
-        "lineagePath": "../../patterns/02-organisms-forms-filter-form/02-organisms-forms-filter-form.rendered.html"
-      }, {
-        "lineagePattern": "organisms-slider-hero",
-        "lineagePath": "../../patterns/02-organisms-sliders-slider-hero/02-organisms-sliders-slider-hero.rendered.html"
+        "lineagePattern": "templates-single-listing",
+        "lineagePath": "../../patterns/03-templates-03-single-listing/03-templates-03-single-listing.rendered.html"
       }],
       "lineageR": [{
-        "lineagePattern": "molecules-block-hero",
-        "lineagePath": "../../patterns/01-molecules-blocks-block-hero/01-molecules-blocks-block-hero.rendered.html"
+        "lineagePattern": "templates-listing",
+        "lineagePath": "../../patterns/03-templates-03-listing/03-templates-03-listing.rendered.html"
       }, {
-        "lineagePattern": "organisms-filter-form",
-        "lineagePath": "../../patterns/02-organisms-forms-filter-form/02-organisms-forms-filter-form.rendered.html"
-      }, {
-        "lineagePattern": "organisms-slider-hero",
-        "lineagePath": "../../patterns/02-organisms-sliders-slider-hero/02-organisms-sliders-slider-hero.rendered.html"
+        "lineagePattern": "templates-single-listing",
+        "lineagePath": "../../patterns/03-templates-03-single-listing/03-templates-03-single-listing.rendered.html"
       }],
       "patternLineageEExists": true,
-      "patternDesc": "<p>Stacked Property Form used to search For Sale or For Rent</p>\n",
+      "patternDesc": "<p>Filter Form used to search on inner pages</p>\n",
       "patternBreadcrumb": {
         "patternType": "organisms",
         "patternSubtype": "forms"
       },
       "patternExtension": "mustache",
-      "patternName": "Find Property Form",
-      "patternPartial": "organisms-find-property-form",
+      "patternName": "Filter Form",
+      "patternPartial": "organisms-filter-form",
       "patternState": "",
       "patternEngineName": "mustache",
       "extraOutput": {}

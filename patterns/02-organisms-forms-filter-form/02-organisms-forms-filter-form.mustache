@@ -1,0 +1,21 @@
+{{# findPropertyForm }}
+<form class="c-form  {{ styleModifier }}" method="post" action="{{ link.pages-dashboard }}">
+
+  <div class="c-form__sale-or-rent-form">
+
+    <div class="c-form__split">
+      {{> molecules-field(id: "SearchAreaField", type: "text", label: "Search Area") }} {{> molecules-select-dropdown(className: "c-form__radius", id: "RadiusDropdown", label: "Search Area") }}
+    </div>
+    {{> molecules-combined-dropdown(symbol: "£", className: "c-form__price", id1: "MinimumPrice", id2: "MaximumPrice", type: "number", label1: "Price From", label2: "Price To") }} {{> molecules-combined-dropdown(className: "c-form__beds", id1: "MinimumBeds",
+    id2: "MaximumBeds", label1: "Min Beds", label2: "Max Beds") }} {{> molecules-select-dropdown(className: "c-form__type", id: "PropertyType", label: "Property Type") }} {{> molecules-select-dropdown(className: "c-form__features", id: "PropertyFeatures",
+    label: "Property Features") }}
+
+    <div class="c-form__filters-link"><a href="#">Filters <span class="fa  fa-arrow-down"></span></a></div>
+  </div>
+</form>
+<!--end c-form--stacked-->
+
+<div class="c-form__hidden-filters">
+  {{> organisms-find-property-form:c-form--hidden-filters }}
+</div>
+{{/ findPropertyForm}}

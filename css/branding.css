@@ -144,7 +144,10 @@ Atomic design is philosophically complimentary with these CSS approaches:
   .c-block-hero:focus .c-block-hero__find-property {
     background-color: #379292; }
 
-.c-form--listing-search {
+/**
+ * Filter Bar form
+ */
+.c-form__hidden-filters {
   background-color: #379292; }
 
 /*------------------------------------*	#MEDIA BLOCK
