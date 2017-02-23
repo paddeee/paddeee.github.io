@@ -557,6 +557,9 @@ dd {
 
 .main--fixed {
   padding-top: 46px; }
+  @media all and (max-width: 50em) {
+    .main--fixed {
+      padding-top: 160px; } }
   .main--fixed .c-form--listing-search {
     position: fixed;
     width: 100%;
@@ -1166,6 +1169,9 @@ figure {
  */
 figcaption {
   font-style: italic; }
+
+.img-margin {
+  margin: 1em 0; }
 
 /*------------------------------------*    #RESET
 \*------------------------------------*/

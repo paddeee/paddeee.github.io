@@ -2,12 +2,17 @@ var scrollFilterBar = (function() {
 
   var docElem = document.documentElement;
   var main = document.querySelector('.main');
+  var listingSearch = document.querySelector('.c-form--listing-search');
   var didScroll = false;
   var changeFilterBarOn = 114;
 
   function init() {
 
     if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv 11/)) || (typeof jQuery.browser !== "undefined" && jQuery.browser.msie == 1)) {
+      return;
+    }
+
+    if (!listingSearch) {
       return;
     }
 
