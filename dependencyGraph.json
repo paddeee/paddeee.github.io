@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1487870121964,
+  "timestamp": 1487872420493,
   "graph": {
     "options": {
       "directed": true,
@@ -434,8 +434,8 @@
         "v": "02-organisms/lists/tout-list.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-00-homepage/03-templates-00-homepage.rendered.html",
-          "lineagePattern": "templates-homepage"
+          "lineagePath": "../../patterns/03-templates-04-about/03-templates-04-about.rendered.html",
+          "lineagePattern": "templates-about"
         }
       },
       {
@@ -444,6 +444,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-00-homepage/03-templates-00-homepage.rendered.html",
           "lineagePattern": "templates-homepage"
+        }
+      },
+      {
+        "v": "02-organisms/sections/featured-agent.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -837,6 +843,11 @@
         "value": {}
       },
       {
+        "v": "02-organisms/sections/featured-agent.mustache",
+        "w": "00-atoms/images/landscape.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/sections/featured-property.mustache",
         "w": "00-atoms/images/landscape.mustache",
         "value": {}
@@ -1154,6 +1165,16 @@
       {
         "v": "03-templates/04-about.mustache",
         "w": "00-atoms/images/square.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-about.mustache",
+        "w": "02-organisms/lists/tout-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-about.mustache",
+        "w": "02-organisms/sections/section-media-list.mustache",
         "value": {}
       },
       {

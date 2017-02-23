@@ -1,0 +1,52 @@
+{{> organisms-header }}
+<main role="main" class="main">
+
+  {{> organisms-slider-hero }} {{> organisms-page-header }}
+
+  <div class="l">
+    {{> organisms-text-blob }}
+  </div>
+
+  <div class="l">
+    <div class="g  g-2up">
+      <div class="gi">
+        <h2 class="upper-case c-section__title">Left text</h2>
+        {{> organisms-text-blob }}
+        <h2 class="upper-case c-section__title">Heading A</h2>
+        {{> organisms-text-blob }} {{> atoms-square:img-margin }}
+      </div>
+      <div class="gi">
+        {{> atoms-square:img-margin }}
+        <h2 class="upper-case c-section__title">Heading B</h2>
+        {{> organisms-text-blob }}
+        <h2 class="upper-case c-section__title">Right text</h2>
+        {{> organisms-text-blob }}
+      </div>
+    </div>
+    <!--end g-->
+  </div>
+
+  <div class="l">
+    {{> organisms-tout-list }}
+  </div>
+
+  <div class="l l--two-col">
+    <div class="l-main">
+      {{# testimonials }} {{> organisms-section-media-list }} {{/ testimonials }}
+    </div>
+    <!--end .l-main-->
+
+    <div class="l-sidebar">
+      {{# featuredPeople }} {{> organisms-section-media-list }} {{/ featuredPeople }}
+    </div>
+    <!--end .l-sidebar-->
+
+  </div>
+  <!--end l--two-col-->
+
+  {{# subscribe }}
+  <div>
+    {{> organisms-subscribe }}
+  </div>
+  {{/ subscribe }} {{> organisms-footer }}
+</main>

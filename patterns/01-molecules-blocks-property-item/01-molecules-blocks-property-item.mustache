@@ -1,0 +1,59 @@
+<div id="{{ propertyID }}" class="c-property-item">
+  <div class="c-property-item__thumb-holder">
+    <a href="{{ url }}" class="zoom-image">
+      <img src="{{ mainImage }}" alt="{{ title }}">
+      <div class="corner-ribbon top-left red">Sold</div>
+      <div class="corner-ribbon bottom-left orange">STC</div>
+      <div class="corner-ribbon top-right blue">Under Offer</div>
+      <div class="corner-ribbon bottom-right green">New</div>
+      <div class="corner-ribbon bottom-centre turquoise">Price Reduced</div>
+    </a>
+  </div>
+  <div class="c-property-item__small-thumbs">
+
+    <div class="c-property-item__small-thumb">
+      <a href="#">
+        <img src="{{ thumb1 }}" alt="{{ title }}">
+      </a>
+    </div>
+    <div class="c-property-item__small-thumb">
+      <a href="#">
+        <img src="{{ thumb2 }}" alt="{{ title }}">
+      </a>
+    </div>
+    <div class="c-property-item__small-thumb">
+      <a href="#">
+        <img src="{{ thumb3 }}" alt="{{ title }}">
+      </a>
+    </div>
+  </div>
+
+  <div class="c-property-item__overview">
+    <h3>{{ title }} <br>{{ town }}</h3>
+    <p>{{ price }}</p>
+  </div>
+
+  <div class="c-property-item__info">
+    <div title="Bedrooms">
+      <span class="fa  fa-2x  fa-bed"></span>
+      <span>6</span>
+    </div>
+    <div title="Bathrooms">
+      <span class="fa  fa-2x  fa-bath"></span>
+      <span>1</span>
+    </div>
+    <div title="Reception Rooms">
+      <span class="fa  fa-2x  fa-tv"></span>
+      <span>2</span>
+    </div>
+  </div>
+
+
+  <div class="c-property-item__description">
+    <p>{{ description }}</p>
+    {{> atoms-text-button(btnText: 'Read more...', linkHref: '#', btnClass: 'c-text-btn--branded-button') }}
+  </div>
+
+  <hr>
+</div>
+<!-- end c-property-item -->

@@ -1,0 +1,23 @@
+{{> organisms-header:header--relative }}
+<main role="main" class="main  main--relative">
+
+  {{> organisms-filter-form:c-form--listing-search }}
+
+  <div id="PropertyListMap" class="map  map--property-listing"></div>
+
+  {{> organisms-featured-property }}
+
+  <div class="l  l--after-float">
+    {{> organisms-title-pagination }}
+  </div>
+
+  <div class="l">
+    {{> organisms-property-list }}
+  </div>
+
+  <div class="l  l--align-center">
+    {{> molecules-pagination }}
+  </div>
+
+  {{> organisms-footer }}
+</main>
