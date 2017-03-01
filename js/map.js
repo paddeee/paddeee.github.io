@@ -187,4 +187,36 @@ function initMap() {
       });
     });
   }
+
+  // Contact Us Map
+  if (singleLocation.length && document.getElementById('ContactMap')) {
+
+    var contactMap = new google.maps.Map(document.getElementById('ContactMap'), {
+      center: {
+        lat: 53.5055999,
+        lng: -2.1944638
+      },
+      scrollwheel: false,
+      zoom: 12
+    });
+
+    jQuery.each(singleLocation, function (i, markerInfo) {
+
+      if (markerInfo[0] == 0 || markerInfo[1] == 0) return;
+      var position = new google.maps.LatLng(markerInfo[0], markerInfo[1]);
+
+      var marker = new Marker({
+        position: position,
+        map: contactMap,
+        icon: {
+          path: MAP_PIN,
+          fillColor: config.primaryColour,
+          fillOpacity: 1,
+          strokeColor: '',
+          strokeWeight: 0
+        },
+        map_icon_label: '<span class="map-icon  map-icon-real-estate-agency"></span>'
+      });
+    });
+  }
 }

@@ -1,0 +1,37 @@
+body {
+  background: #eee;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  border: 4px solid rgba(255,255,255,0);
+  background-clip: content-box;
+  background-color: #bfbfbf;
+}
+
+input, textarea, keygen, select, button {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+epe-offline {
+  height: 100%;
+}
+
+/* Override for leaflet popup not positioning correctly due to margin specidfied in bower leaflet */
+.leaflet-popup-content {
+  margin: 0 !important;
+}
