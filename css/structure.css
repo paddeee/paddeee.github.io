@@ -557,9 +557,6 @@ dd {
 
 .main--fixed {
   padding-top: 46px; }
-  @media all and (max-width: 50em) {
-    .main--fixed {
-      padding-top: 160px; } }
   .main--fixed .c-form--listing-search {
     position: fixed;
     width: 100%;
@@ -578,13 +575,6 @@ dd {
   height: 24rem; }
   @media all and (min-width: 900px) {
     .map--property-listing {
-      margin: 0;
-      width: 100%; } }
-
-.map--contact {
-  height: 24rem; }
-  @media all and (min-width: 900px) {
-    .map--contact {
       margin: 0;
       width: 100%; } }
 
@@ -1351,8 +1341,7 @@ abbr {
     background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
     background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
-    background-repeat: no-repeat;
-    padding: 0 0.5em; }
+    background-repeat: no-repeat; }
   .c-form--listing-search .c-form__sale-or-rent {
     display: none; }
   .c-form--listing-search .c-form__sale-or-rent-form {
@@ -3158,7 +3147,7 @@ abbr {
     .c-featured-property__image {
       float: left;
       perspective: 50em;
-      width: 60%; }
+      width: 50%; }
       .c-featured-property__image a:hover img {
         transform: rotateY(10deg); }
       .c-featured-property__image a img {
@@ -3168,7 +3157,7 @@ abbr {
 
 @media all and (min-width: 900px) {
   .c-featured-property__detail-wrapper {
-    width: 34%;
+    width: 46%;
     margin: 0 0 0 auto; } }
 
 .c-featured-property__detail-grid {
@@ -3214,7 +3203,7 @@ abbr {
 
 @media all and (min-width: 900px) {
   .c-featured-property__description {
-    width: 34%;
+    width: 46%;
     font-size: 0.75rem;
     color: #808080;
     padding: 4em 0 0;

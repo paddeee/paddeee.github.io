@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1488378397009,
+  "timestamp": 1488450216117,
   "graph": {
     "options": {
       "directed": true,
@@ -434,8 +434,8 @@
         "v": "02-organisms/lists/tout-list.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-04-about/03-templates-04-about.rendered.html",
-          "lineagePattern": "templates-about"
+          "lineagePath": "../../patterns/03-templates-00-homepage/03-templates-00-homepage.rendered.html",
+          "lineagePattern": "templates-homepage"
         }
       },
       {
@@ -444,12 +444,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-00-homepage/03-templates-00-homepage.rendered.html",
           "lineagePattern": "templates-homepage"
-        }
-      },
-      {
-        "v": "02-organisms/sections/featured-agent.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
@@ -594,14 +588,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-03-about/04-pages-03-about.rendered.html",
           "lineagePattern": "pages-about"
-        }
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-04-contact/04-pages-04-contact.rendered.html",
-          "lineagePattern": "pages-contact"
         }
       },
       {
@@ -847,11 +833,6 @@
       },
       {
         "v": "02-organisms/sections/affiliated.mustache",
-        "w": "00-atoms/images/landscape.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/sections/featured-agent.mustache",
         "w": "00-atoms/images/landscape.mustache",
         "value": {}
       },
@@ -1177,46 +1158,11 @@
       },
       {
         "v": "03-templates/04-about.mustache",
-        "w": "02-organisms/lists/tout-list.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/04-about.mustache",
-        "w": "02-organisms/sections/section-media-list.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/04-about.mustache",
         "w": "02-organisms/sections/subscribe.mustache",
         "value": {}
       },
       {
         "v": "03-templates/04-about.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
-        "w": "02-organisms/00-global/00-header.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
-        "w": "02-organisms/text/page-header.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
-        "w": "02-organisms/text/text-blob.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
-        "w": "02-organisms/forms/stacked-form.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/05-contact.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -1272,7 +1218,7 @@
       },
       {
         "v": "04-pages/04-contact.mustache",
-        "w": "03-templates/05-contact.mustache",
+        "w": "03-templates/2-detail.mustache",
         "value": {}
       },
       {

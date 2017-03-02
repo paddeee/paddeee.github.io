@@ -26,27 +26,5 @@
     <!--end g-->
   </div>
 
-  <div class="l">
-    {{> organisms-tout-list }}
-  </div>
-
-  <div class="l l--two-col">
-    <div class="l-main">
-      {{# testimonials }} {{> organisms-section-media-list }} {{/ testimonials }}
-    </div>
-    <!--end .l-main-->
-
-    <div class="l-sidebar">
-      {{# featuredPeople }} {{> organisms-section-media-list }} {{/ featuredPeople }}
-    </div>
-    <!--end .l-sidebar-->
-
-  </div>
-  <!--end l--two-col-->
-
-  {{# subscribe }}
-  <div>
-    {{> organisms-subscribe }}
-  </div>
-  {{/ subscribe }} {{> organisms-footer }}
+  {{# subscribe }} {{> organisms-subscribe }} {{/ subscribe }} {{> organisms-footer }}
 </main>
